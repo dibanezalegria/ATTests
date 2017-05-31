@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="64dp">
+
+        <LinearLayout
+            android:id="@+id/user_registration_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".UserRegistrationActivity"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Account registration"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/tv_message_output"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/red_400"
+                android:gravity="center"
+                tools:text="message_output"/>
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:digits="@string/valid_characters"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="Username"
+                android:inputType="textFilter"
+                android:maxLength="12"
+                android:padding="8dp"
+                android:paddingStart="12dp"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:digits="@string/valid_characters"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:padding="8dp"
+                android:paddingStart="12dp"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/et_password_repeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:digits="@string/valid_characters"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="Repeat password"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:padding="8dp"
+                android:paddingStart="12dp"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/custom_button_spara"
+                android:text="Done"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/custom_button_cancel"
+                android:text="Cancel"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

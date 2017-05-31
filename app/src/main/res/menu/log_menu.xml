@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/users_log"
+        android:title="Users DB log"/>
+    <item
+        android:id="@+id/patients_log"
+        android:title="Patients DB log"/>
+    <item
+        android:id="@+id/tests_log"
+        android:title="Tests DB log"/>
+</menu>

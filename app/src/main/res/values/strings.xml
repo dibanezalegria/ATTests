@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ATTests</string>
+
+    <string name="valid_characters">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789äåö</string>
+    <string name="valid_characters_plus_blank">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789äåö</string>
+
+    <!-- activity_login.xml -->
+    <string name="app_version">v1.0</string>
+    <string name="login_no_account_yet">No account yet? Register</string>
+    <string name="copyright">&#169;&#160;2017&#160;pbluedotsoft@gmail.com</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="login">Log in</string>
+    <string name="image_description">logo image</string>
+    <string name="error_user_registration">Error creating user account. Please try again.</string>
+    <string name="failed_login">Login failed. Please try again</string>
+
+    <!-- activity_user_registration.xml -->
+    <string name="enter_username">Please enter username"</string>
+    <string name="enter_password">Please enter password/repeat password</string>
+    <string name="password_no_match">Password/Repeat password do not match</string>
+    <string name="user_taken">Error: username already taken</string>
+
+    <!-- activity_patients.xml -->
+    <string name="title_activity_patients">PatientsActivity</string>
+
+
+</resources>
