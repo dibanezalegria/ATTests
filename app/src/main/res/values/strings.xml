@@ -1,8 +1,15 @@
 <resources>
     <string name="app_name">ATTests</string>
 
+    <string name="empty_string">""</string>
+
     <string name="valid_characters">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789äåö</string>
     <string name="valid_characters_plus_blank">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789äåö</string>
+
+    <string name="done_button">SPARA</string>
+
+    <string name="test_saved_complete">Test completed.</string>
+    <string name="test_saved_incomplete">Changes have been saved, but test is <b>NOT</b> completed.</string>
 
     <!-- activity_login.xml -->
     <string name="app_version">v1.0</string>
@@ -23,6 +30,21 @@
 
     <!-- activity_patients.xml -->
     <string name="title_activity_patients">PatientsActivity</string>
+
+    <!-- activity_test_list.xml -->
+    <string name="test_list_help_info">Placeholder text</string>
+
+    <!--
+  ________________________________________________________________________________________________
+
+                                              VAS
+
+  ________________________________________________________________________________________________
+  -->
+
+    <!-- CDATA sections are used to escape blocks of text containing characters that would otherwise be regarded as markup. -->
+    <string name="vas_manual"><![CDATA[<h1>VAS - Visuell Analog Skala</h1><p>Skatta på skala mellan 0 och 100.</p>]]></string>
+
 
 
 </resources>

@@ -15,11 +15,11 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.RelativeLayout;
 
-import com.pbluedotsoft.atapp.data.DbUtils;
-import com.pbluedotsoft.atapp.databinding.ActivityLoginBinding;
 import com.pbluedotsoft.atapp.data.DbContract.UserEntry;
+import com.pbluedotsoft.atapp.data.DbUtils;
+import com.pbluedotsoft.atapp.data.EXTRAS;
+import com.pbluedotsoft.atapp.databinding.ActivityLoginBinding;
 
 import java.util.Locale;
 
@@ -31,6 +31,13 @@ public class LoginActivity extends AppCompatActivity {
     private ActivityLoginBinding bind;
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        bind.etUsername.setText("");
+        bind.etPassword.setText("");
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
@@ -38,10 +45,12 @@ public class LoginActivity extends AppCompatActivity {
         // Keep screen on
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
+        // Binding instead of findViewById
+        bind = DataBindingUtil.setContentView(this, R.layout.activity_login);
+
         // Layout background listener closes soft keyboard, so keyboard does not pop up
         // automatically when launching activity
-        RelativeLayout layout = (RelativeLayout) findViewById(R.id.activity_login);
-        layout.setOnTouchListener(new View.OnTouchListener() {
+        bind.activityLogin.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 // Hide soft keyboard
@@ -51,9 +60,6 @@ public class LoginActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-        // Binding instead of findViewById
-        bind = DataBindingUtil.setContentView(this, R.layout.activity_login);
 
         // Login button
         bind.btnLoginOrCreate.setTransformationMethod(null);    // button text non capitalized
@@ -65,8 +71,10 @@ public class LoginActivity extends AppCompatActivity {
                 if (user.equals("admin") && pass.equals("admin")) {
                     Intent intent = new Intent(LoginActivity.this, AdminActivity.class);
                     startActivity(intent);
-                } else if(loginAuthentication(user, pass)) {
+                } else if (loginAuthentication(user, pass)) {
                     Intent intent = new Intent(LoginActivity.this, PatientsActivity.class);
+                    intent.putExtra(EXTRAS.KEY_USER_ID, getUserID(user));
+                    intent.putExtra(EXTRAS.KEY_USER_NAME, user);
                     startActivity(intent);
                 } else {
                     // Hide soft keyboard
@@ -137,8 +145,8 @@ public class LoginActivity extends AppCompatActivity {
     /**
      * Login authentication
      *
-     * @param user  username
-     * @param pass  password
+     * @param user username
+     * @param pass password
      * @return true if user and pass match entry in 'user' database
      */
     private boolean loginAuthentication(String user, String pass) {
@@ -158,5 +166,31 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         return false;
+    }
+
+    /**
+     * Return user id for user name given
+     *
+     * @param user  String user name
+     * @return  int user id
+     */
+    private int getUserID(String user) {
+        String selection = UserEntry.COLUMN_NAME + "=?";
+        String[] selectionArgs = {user};
+        Cursor cursor = null;
+        try {
+            cursor = getContentResolver().query(UserEntry.CONTENT_URI, null,
+                    selection, selectionArgs, null);
+            if (cursor != null && cursor.getCount() == 1) {
+                cursor.moveToFirst();
+                return cursor.getInt(cursor.getColumnIndex(UserEntry.COLUMN_ID));
+            }
+        } finally {
+            if (cursor != null) {
+                cursor.close();
+            }
+        }
+
+        return -1;
     }
 }

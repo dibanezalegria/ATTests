@@ -1,3 +1,8 @@
 <resources>
-    <dimen name="fab_margin">16dp</dimen>
+    <!-- VAS ___________________________________________________________________________________ -->
+    <!-- Padding for slider including scale and output -->
+    <dimen name="vas_slider_padding_top">30dp</dimen>
+    <!-- Text size for output text views -->
+    <dimen name="vas_output_text_size">26sp</dimen>
+    <dimen name="vas_default_text_size">26sp</dimen>
 </resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingBottom="16dp"
+              android:paddingEnd="24dp"
+              android:paddingStart="24dp"
+              android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="50"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#616161"
+        tools:text="Name"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:src="@drawable/ic_more_horiz_black_36dp"
+        android:tint="@color/grey_700"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+    
+    <ImageView
+        android:id="@+id/tick_in"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:src="@drawable/ic_done_black_36dp"
+        android:tint="@color/complete"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <ImageView
+        android:id="@+id/tick_out"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:src="@drawable/ic_done_black_36dp"
+        android:tint="@color/complete"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+</LinearLayout>

@@ -6,15 +6,14 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.databinding.DataBindingUtil;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.LinearLayout;
 
 import com.pbluedotsoft.atapp.data.DbContract.UserEntry;
 import com.pbluedotsoft.atapp.databinding.ActivityUserRegistrationBinding;
@@ -22,6 +21,8 @@ import com.pbluedotsoft.atapp.databinding.ActivityUserRegistrationBinding;
 public class UserRegistrationActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = UserRegistrationActivity.class.getSimpleName();
+
+    private ActivityUserRegistrationBinding bind;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +32,11 @@ public class UserRegistrationActivity extends AppCompatActivity {
         // Keep screen on
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
+        bind = DataBindingUtil.setContentView(this, R.layout.activity_user_registration);
+
         // Layout background listener closes soft keyboard, so keyboard does not pop up
         // automatically when launching activity
-        LinearLayout layout = (LinearLayout) findViewById(R.id.user_registration_layout);
-        layout.setOnTouchListener(new View.OnTouchListener() {
+        bind.userRegistrationLayout.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 // Hide soft keyboard
@@ -44,9 +46,6 @@ public class UserRegistrationActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-        final ActivityUserRegistrationBinding bind = DataBindingUtil.setContentView(this,
-                R.layout.activity_user_registration);
 
         // Done button
         bind.btnDone.setOnClickListener(new View.OnClickListener() {

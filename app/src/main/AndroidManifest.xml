@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        <provider
+            android:name=".data.DbProvider"
+            android:authorities="com.pbluedotsoft.atapp"
+            android:exported="false" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,20 +25,26 @@
         </activity>
         <activity
             android:name=".PatientsActivity"
-            android:parentActivityName=".LoginActivity" />
+            android:parentActivityName=".LoginActivity"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
         <activity
             android:name=".UserRegistrationActivity"
+            android:parentActivityName=".LoginActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AdminActivity"
             android:parentActivityName=".LoginActivity" />
-
-        <activity android:name=".AdminActivity"
-            android:parentActivityName=".LoginActivity"/>
-
-        <provider
-            android:name=".data.DbProvider"
-            android:authorities="com.pbluedotsoft.atapp"
-            android:exported="false" />
-
-
+        <activity
+            android:name=".TestListActivity"
+            android:parentActivityName=".PatientsActivity"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity
+            android:name=".ResultTableActivity"
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+        <activity
+            android:name=".TestActivity"
+            android:parentActivityName=".TestListActivity"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
     </application>
 
 </manifest>

@@ -5,14 +5,17 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="64dp">
+        android:background="@color/blue_grey_100"
+        android:fillViewport="true"
+        android:scrollbars="none">
 
         <LinearLayout
             android:id="@+id/user_registration_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".UserRegistrationActivity"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="64dp"
+            tools:context=".UserRegistrationActivity">
 
             <TextView
                 android:layout_width="match_parent"
@@ -21,79 +24,96 @@
                 android:text="Account registration"
                 android:textSize="32sp" />
 
-            <TextView
-                android:id="@+id/tv_message_output"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:textAppearance="@android:style/TextAppearance.Medium"
-                android:textColor="@color/red_400"
-                android:gravity="center"
-                tools:text="message_output"/>
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="32dp">
 
-            <EditText
-                android:id="@+id/et_username"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:digits="@string/valid_characters"
-                android:ems="10"
-                android:fontFamily="sans-serif"
-                android:hint="Username"
-                android:inputType="textFilter"
-                android:maxLength="12"
-                android:padding="8dp"
-                android:paddingStart="12dp"
-                android:textSize="24sp" />
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:digits="@string/valid_characters"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:hint="Username"
+                    android:inputType="textFilter"
+                    android:maxLength="12"
+                    android:padding="8dp"
+                    android:paddingStart="12dp"
+                    android:textSize="24sp" />
 
-            <EditText
-                android:id="@+id/et_password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:digits="@string/valid_characters"
-                android:ems="10"
-                android:fontFamily="sans-serif"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:maxLength="12"
-                android:padding="8dp"
-                android:paddingStart="12dp"
-                android:textSize="24sp" />
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:digits="@string/valid_characters"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLength="12"
+                    android:padding="8dp"
+                    android:paddingStart="12dp"
+                    android:textSize="24sp" />
 
-            <EditText
-                android:id="@+id/et_password_repeat"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:digits="@string/valid_characters"
-                android:ems="10"
-                android:fontFamily="sans-serif"
-                android:hint="Repeat password"
-                android:inputType="textPassword"
-                android:maxLength="12"
-                android:padding="8dp"
-                android:paddingStart="12dp"
-                android:textSize="24sp" />
+                <EditText
+                    android:id="@+id/et_password_repeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:digits="@string/valid_characters"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:hint="Repeat password"
+                    android:inputType="textPassword"
+                    android:maxLength="12"
+                    android:padding="8dp"
+                    android:paddingStart="12dp"
+                    android:textSize="24sp" />
 
-            <Button
-                android:id="@+id/btn_done"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
-                android:background="@drawable/custom_button_spara"
-                android:text="Done"
-                android:textColor="@android:color/white" />
+                <TextView
+                    android:id="@+id/tv_message_output"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/red_400"
+                    tools:text="message_output" />
 
-            <Button
-                android:id="@+id/btn_cancel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:background="@drawable/custom_button_cancel"
-                android:text="Cancel"
-                android:textColor="@android:color/white" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_weight="25"
+                        android:background="@drawable/custom_button_cancel_red"
+                        android:text="Cancel"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/btn_done"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_weight="75"
+                        android:background="@drawable/custom_button_spara"
+                        android:text="Register"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </layout>

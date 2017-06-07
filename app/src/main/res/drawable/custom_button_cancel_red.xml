@@ -4,7 +4,7 @@
         <shape>
             <solid
                 android:width="3dp"
-                android:color="@color/grey_600" />
+                android:color="@color/red_600" />
             <corners
                 android:radius="3dp" />
             <padding
@@ -19,7 +19,7 @@
         <shape>
             <solid
                 android:width="3dp"
-                android:color="@color/grey_200" />
+                android:color="@color/red_200" />
             <corners
                 android:radius="3dp" />
             <padding
@@ -34,7 +34,7 @@
         <shape>
             <solid
                 android:width="3dp"
-                android:color="@color/grey_400" />
+                android:color="@color/red_400" />
             <corners
                 android:radius="3dp" />
             <padding

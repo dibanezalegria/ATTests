@@ -5,13 +5,15 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:fillViewport="true"
         android:background="@color/blue_grey_900"
-        android:padding="64dp">
+        android:scrollbars="none">
 
         <RelativeLayout
             android:id="@+id/activity_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="64dp"
             android:background="@color/blue_grey_900"
             tools:context=".LoginActivity">
 

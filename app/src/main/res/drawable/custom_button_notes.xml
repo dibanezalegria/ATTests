@@ -4,9 +4,9 @@
         <shape>
             <solid
                 android:width="3dp"
-                android:color="@color/grey_600" />
+                android:color="@color/indigo_700" />
             <corners
-                android:radius="3dp" />
+                android:radius="6dp" />
             <padding
                 android:left="10dp"
                 android:top="10dp"
@@ -19,9 +19,9 @@
         <shape>
             <solid
                 android:width="3dp"
-                android:color="@color/grey_200" />
+                android:color="@color/indigo_200" />
             <corners
-                android:radius="3dp" />
+                android:radius="6dp" />
             <padding
                 android:left="10dp"
                 android:top="10dp"
@@ -34,9 +34,9 @@
         <shape>
             <solid
                 android:width="3dp"
-                android:color="@color/grey_400" />
+                android:color="@color/blue_grey_900" />
             <corners
-                android:radius="3dp" />
+                android:radius="6dp" />
             <padding
                 android:left="10dp"
                 android:top="10dp"
