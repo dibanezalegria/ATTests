@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ATTests</string>
+    <string name="app_name">AT Tests</string>
 
     <string name="empty_string">""</string>
 
@@ -44,6 +44,79 @@
 
     <!-- CDATA sections are used to escape blocks of text containing characters that would otherwise be regarded as markup. -->
     <string name="vas_manual"><![CDATA[<h1>VAS - Visuell Analog Skala</h1><p>Skatta på skala mellan 0 och 100.</p>]]></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--
+  ________________________________________________________________________________________________
+
+                                              SOFI
+
+  ________________________________________________________________________________________________
+  -->
+    <string name="sofi_manual">SOFI instructions manual</string>
+
+    <string name="hand_title">Handfunktion</string>
+    <string name="arm_title">Armfunktion</string>
+    <string name="ben_title">Benfunktion</string>
+    
+    <string name="q1">1. Gripa om cylinder med handflatan och alla fingrar tätt. Män 8 cm, kvinnor 6 cm cylinderdiam.</string>
+    <string name="q2">2. Fingerflexion. Gripa om en penna fullständigt med dig II-V.</string>
+    <string name="q3">3. Runt pincettgrepp.</string>
+    <string name="q4">4. Opposition av tummens topp mot basen av dig V.</string>
+    <string name="q5">5. Hand och fingrar mot nackens processus spinosus med armen abducerad 90°</string>
+    <string name="q6">6. Supination med 90° flexion I armbågar med handryggen (MCP II-V) och underarmarna på bordet
+        med armbågarna mot midjan.</string>
+    <string name="q7">7. Armbågsextension i stående mätt med goniometer.</string>
+    <string name="q8">8. Handledsextension mätt med goniometer sittande på stol med underarmarna understödda mot bordet.</string>
+    <string name="q9">9. Sittande på stol med rygg mot ryggstöd och stöd för fötterna. Placera häl ovanpå motsatt knä.</string>
+    <string name="q10">10. Knäextension i ryggliggande. Mäts med goniometer.</string>
+    <string name="q11">11. Lätt balansstöd (sjukgymnastens händer). Placera en fot på vippbrädans mittpunkt.
+        Tippa brädan maximalt framåt och sedan bakåt. Rörelsen ska ske endast i fotleden.</string>
+    <string name="q12">12. Tåhävning med ett ben i taget, balansstöd som i nr. 11</string>
+
+    <string name="q1a0">0 - fullt möjligt</string>
+    <string name="q1a1">1 - griper runt med alla fingrar men handflatan har ej full kontakt med cylindern</string>
+    <string name="q1a2">2 - går ej</string>
+    <string name="q2a0">0 - fullt möjligt</string>
+    <string name="q2a1">1 - kan gripa om en cylinder (2 cm diam) fullständigt med dig II-V</string>
+    <string name="q2a2">2 - går ej</string>
+    <string name="q3a0">0 - fullt möjligt</string>
+    <string name="q3a1">1 - klarar D-format pincettgrepp</string>
+    <string name="q3a2">2 - går ej</string>
+    <string name="q4a0">0 - fullt möjligt</string>
+    <string name="q4a1">1 - klarar opposition av tummen mot handflatan och passera pekfinger, tummen behöver ej
+        vidröra handflatan</string>
+    <string name="q4a2">2 - går ej</string>
+
+    <string name="q5a0">0 - fullt möjligt</string>
+    <string name="q5a1">1 - klarar ovanstående men med &lt;90° abd</string>
+    <string name="q5a2">2 - klarar ej ovanstående</string>
+    <string name="q6a0">0 - fullt möjligt</string>
+    <string name="q6a1">1 - klarar 45° eller mer</string>
+    <string name="q6a2">2 - klarar mindre än halvvägs (&lt;45°)</string>
+    <string name="q7a0">0 - full extension, 0°</string>
+    <string name="q7a1">1 - 15° eller mindre  extensionsdefekt </string>
+    <string name="q7a2">2 - mer än 15° extensionsdefekt</string>
+    <string name="q8a0">0 - extension >= 60°</string>
+    <string name="q8a1">1 - extension 30-59°</string>
+    <string name="q8a2">2 - extension &lt;30°</string>
+
+    <string name="q9a0">0 - fullt möjligt</string>
+    <string name="q9a1">1 - hälen kan lyftas halvvägs upp på motsatt underben</string>
+    <string name="q9a2">2 - går ej</string>
+    <string name="q10a0">0 - full extension, 0°</string>
+    <string name="q10a1">1 - 10° eller mindre extensionsdefekt</string>
+    <string name="q10a2">2 - mer än 10° extensionsdefekt</string>
+    <string name="q11a0">0 - klarar att tippa så hälsidan nuddar golvet</string>
+    <string name="q11a1">1 - klarar att tippa med max 2 cm från golvet </string>
+    <string name="q11a2">2 - går ej</string>
+    <string name="q12a0">0 - fullt möjligt</string>
+    <string name="q12a1">1 - fullt möjligt men gör ont</string>
+    <string name="q12a2">2 - går ej </string>
+
+    <string name="summa">Summa (0&#8211;16p)</string>
 
 
 

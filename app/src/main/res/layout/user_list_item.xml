@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingStart="16dp"
+              android:paddingEnd="16dp"
+              android:paddingTop="6dp"
+              android:paddingBottom="6dp"
+              android:background="@android:color/white"
+              android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/user_list_item_id_tv"
+        android:layout_width="0dp"
+        android:layout_weight="0"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/user_list_item_name_tv"
+        android:layout_width="0dp"
+        android:layout_weight="30"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/textColor"/>
+
+    <ToggleButton
+        android:id="@+id/user_list_item_show_pass_btn"
+        android:layout_width="0dp"
+        android:layout_weight="20"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:textOff="Show pass"
+        android:textOn="Hide"/>
+
+    <TextView
+        android:id="@+id/user_list_item_pass_tv"
+        android:layout_width="0dp"
+        android:layout_weight="30"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:visibility="invisible"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/blue_grey_800"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/user_list_item_delete_btn"
+        android:layout_width="0dp"
+        android:layout_weight="20"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Delete"/>
+
+</LinearLayout>

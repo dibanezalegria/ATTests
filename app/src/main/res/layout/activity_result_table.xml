@@ -1,14 +1,1052 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.pbluedotsoft.atapp.ResultTableActivity">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/layout_result_activity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="ResultTableActivity"/>
+        android:orientation="vertical"
+        tools:context="com.pbluedotsoft.atapp.ResultTableActivity">
 
-</android.support.constraint.ConstraintLayout>
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_grey_800"
+            android:gravity="center_vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="RESULTS TABLE"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue_grey_50_darker"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Table -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:text="HÖGER"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:text="VÄNSTER"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/table_fsa_notes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/layout_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal"
+                        android:textColor="@color/red_600" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="JAMAR"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:text="IN"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:text="UT"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:text="IN"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:text="UT"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/layout_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/layout_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Handstyrka"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/jamar_hand_in_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/jamar_hand_ut_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/jamar_hand_in_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/jamar_hand_ut_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/layout_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/layout_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Normalvärde"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/layout_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/layout_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="VAS"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/layout_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/layout_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Handfunktion"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vas_hand_in_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vas_hand_ut_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vas_hand_in_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vas_hand_ut_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/layout_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/layout_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Smärta"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vas_smarta_in_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vas_smarta_ut_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vas_smarta_in_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vas_smarta_ut_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/layout_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/layout_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Stelhet"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vas_stelhet_in_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vas_stelhet_ut_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vas_stelhet_in_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vas_stelhet_ut_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/layout_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_border_only"
+                    android:ellipsize="end"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="(skala 0-100 mm)"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/layout_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="9-HOLE PEGTEST"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/peg_in_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/peg_ut_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/peg_in_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/peg_ut_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/layout_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_border_only"
+                    android:ellipsize="end"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="(mätts i sek./normalvärde/ålder)"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="18"
+                        android:padding="@dimen/mat_padding"
+                        android:text="SOFI Funktionstest"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/table_6min_meter_in"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:text="IN"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/table_6min_meter_out"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:text="UT"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/table_6min_notes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/layout_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal"
+                        android:textColor="@color/red_600" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="18"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Handfunktion"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/sofi_hand_in"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ellipsize="end"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/sofi_hand_ut"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ellipsize="end"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/layout_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="18"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Armfunktion"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/sofi_arm_in"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/sofi_arm_ut"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/layout_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="18"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Benfunktion"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/sofi_ben_in"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ellipsize="end"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/sofi_ben_ut"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ellipsize="end"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/layout_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg"
+                    android:ems="18"
+                    android:padding="@dimen/mat_padding"
+                    android:text="(skala 0-16 poäng respektive område; 0 = ua)"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:background="@drawable/layout_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="GAT"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/gat_in"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/gat_ut"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/layout_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_border_only"
+                    android:ellipsize="end"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:text="(normalvärde 11-20 sek / medel 16,5 sek"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg"
+                    android:ems="18"
+                    android:maxLines="1"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="HAQ ADL-Index"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/haq_in"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/haq_ut"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/layout_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/layout_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg"
+                    android:padding="@dimen/mat_padding"
+                    android:text="Total summa: (0-3p, 0=ua)"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textAppearance="@style/TextCustomNormal"
+                        android:textColor="@color/red_600" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="6dp"
+                        android:text="kommentar"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/test_background_color"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        tools:context="com.pbluedotsoft.atapp.TestActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="26dp"
+            android:paddingStart="26dp">
+
+            <!-- Handfunktion -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/hand_title"
+                android:textAppearance="@style/TextCustomLarge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:text="@string/q1"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sofi_margin_start_rg"
+                android:layout_marginEnd="@dimen/sofi_margin_end_rg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_rg1h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Höger"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg1h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q1a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q1a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q1a2" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_rg1v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vänster"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg1v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q1a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q1a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q1a2" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="6dp"
+                android:text="@string/q2"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sofi_margin_start_rg"
+                android:layout_marginEnd="@dimen/sofi_margin_end_rg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_rg2h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Höger"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg2h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q2a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q2a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q2a2" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_rg2v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vänster"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg2v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q2a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q2a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q2a2" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="6dp"
+                android:text="@string/q3"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sofi_margin_start_rg"
+                android:layout_marginEnd="@dimen/sofi_margin_end_rg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_rg3h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Höger"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg3h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q3a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q3a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q3a2" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_rg3v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vänster"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg3v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q3a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q3a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q3a2" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="6dp"
+                android:text="@string/q4"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sofi_margin_start_rg"
+                android:layout_marginEnd="@dimen/sofi_margin_end_rg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_rg4h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Höger"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg4h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q4a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q4a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q4a2" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_rg4v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vänster"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg4v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q4a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q4a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q4a2" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/summa"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_sum1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/sofi_tv_sum"
+                    android:gravity="center"
+                    android:minEms="2"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    tools:text="1" />
+            </LinearLayout>
+
+            <!-- Armfunktion -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/arm_title"
+                android:textAppearance="@style/TextCustomLarge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:text="@string/q5"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sofi_margin_start_rg"
+                android:layout_marginEnd="@dimen/sofi_margin_end_rg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_rg5h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Höger"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg5h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q5a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q5a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q5a2" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_rg5v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vänster"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg5v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q5a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q5a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q5a2" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="6dp"
+                android:text="@string/q6"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sofi_margin_start_rg"
+                android:layout_marginEnd="@dimen/sofi_margin_end_rg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_rg6h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Höger"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg6h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q6a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q6a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q6a2" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_rg6v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vänster"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg6v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q6a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q6a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q6a2" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="6dp"
+                android:text="@string/q7"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sofi_margin_start_rg"
+                android:layout_marginEnd="@dimen/sofi_margin_end_rg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_rg7h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Höger"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg7h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q7a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q7a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q7a2" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_rg7v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vänster"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg7v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q7a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q7a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q7a2" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="6dp"
+                android:text="@string/q8"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sofi_margin_start_rg"
+                android:layout_marginEnd="@dimen/sofi_margin_end_rg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_rg8h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Höger"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg8h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q8a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q8a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q8a2" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_rg8v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vänster"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg8v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q8a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q8a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q8a2" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/summa"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_sum2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/sofi_tv_sum"
+                    android:gravity="center"
+                    android:minEms="2"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    tools:text="1" />
+            </LinearLayout>
+
+            <!-- Benfunktion -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/ben_title"
+                android:textAppearance="@style/TextCustomLarge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:text="@string/q9"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sofi_margin_start_rg"
+                android:layout_marginEnd="@dimen/sofi_margin_end_rg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_rg9h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Höger"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg9h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q9a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q9a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q9a2" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_rg9v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vänster"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg9v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q9a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q9a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q9a2" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="6dp"
+                android:text="@string/q10"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sofi_margin_start_rg"
+                android:layout_marginEnd="@dimen/sofi_margin_end_rg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_rg10h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Höger"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg10h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q10a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q10a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q10a2" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_rg10v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vänster"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg10v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q10a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q10a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q10a2" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="6dp"
+                android:text="@string/q11"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sofi_margin_start_rg"
+                android:layout_marginEnd="@dimen/sofi_margin_end_rg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_rg11h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Höger"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg11h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q11a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q11a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q11a2" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_rg11v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vänster"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg11v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q11a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q11a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q11a2" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="6dp"
+                android:text="@string/q12"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/sofi_margin_start_rg"
+                android:layout_marginEnd="@dimen/sofi_margin_end_rg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_rg12h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Höger"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg12h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q12a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q12a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q12a2" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_rg12v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vänster"
+                    android:textAppearance="@style/TextCustomSmall" />
+
+                <RadioGroup
+                    android:id="@+id/rg12v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q12a0" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q12a1" />
+
+                    <RadioButton
+                        style="@style/sofi_text_radio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/q12a2" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/summa"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_sum3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/sofi_tv_sum"
+                    android:gravity="center"
+                    android:minEms="2"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    tools:text="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total summa (0-48 p, 0p = ua)"
+                    android:layout_gravity="center_vertical"
+                    android:textAppearance="@style/TextCustomLarge"/>
+
+                <TextView
+                    android:id="@+id/tv_total_sum"
+                    style="@style/total_sum_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center"
+                    android:minEms="2"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/custom_button_spara"
+                android:text="@string/done_button"
+                android:textAppearance="@style/TextCustomNormal"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>
+

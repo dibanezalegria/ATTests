@@ -31,9 +31,14 @@ public class CustomPagerAdapter extends FragmentPagerAdapter {
         // What test should I create?
         Fragment fragment;
         switch (mTestCode) {
-            default:
+            case "VAS":
                 fragment = new VASFragment();
                 break;
+            case "SOFI":
+                fragment = new SofiFragment();
+                break;
+            default:
+                fragment = new VASFragment();
         }
 
         // Android recommends to use Bundle to pass parameters to Fragments

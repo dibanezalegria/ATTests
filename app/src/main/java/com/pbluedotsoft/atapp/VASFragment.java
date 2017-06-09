@@ -2,7 +2,6 @@ package com.pbluedotsoft.atapp;
 
 
 import android.content.ContentValues;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.database.Cursor;
 import android.databinding.DataBindingUtil;
@@ -16,10 +15,7 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ScrollView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -31,11 +27,11 @@ import com.pbluedotsoft.atapp.databinding.FragmentVasBinding;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class VASFragment extends Fragment implements View.OnClickListener {
+public class VASFragment extends Fragment {
 
     private static final String LOG_TAG = VASFragment.class.getSimpleName();
 
-    private static final int N_SLIDERS = 4;
+    private static final int N_SLIDERS = 6;
 
     // Save state constant
     private static final String STATE_CONTENT = "state_content";
@@ -71,67 +67,41 @@ public class VASFragment extends Fragment implements View.OnClickListener {
         // Binding instead of findViewById
         bind = DataBindingUtil.inflate(inflater, R.layout.fragment_vas, container, false);
 
+        // Disable touch events in the 'other' tab
+        if ((mTab == Test.IN && mInOut == 1) || (mTab == Test.OUT && mInOut == 0)) {
+            disableTouchOnLayout(bind.scrollView);
+        }
+
         // Seek Bars
-        mSeekBars[0] = bind.seekbarKondition;
-        mSeekBars[1] = bind.seekbarSmarta;
-        mSeekBars[2] = bind.seekbarStelhet;
-        mSeekBars[3] = bind.seekbarTrotthet;
+        mSeekBars[0] = bind.seekbarHandfunktionH;
+        mSeekBars[1] = bind.seekbarHandfunktionV;
+        mSeekBars[2] = bind.seekbarSmartaH;
+        mSeekBars[3] = bind.seekbarSmartaV;
+        mSeekBars[4] = bind.seekbarStelhetH;
+        mSeekBars[5] = bind.seekbarStelhetV;
 
         // IN or OUT background color adjustments
         if (mTab == Test.IN) {
             bind.scrollView.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.bgIn));
-            for (SeekBar sb: mSeekBars) {
+            for (SeekBar sb : mSeekBars) {
                 sb.setProgressDrawable(
                         ContextCompat.getDrawable(getActivity(), R.drawable.seek_bar_progress_in));
             }
 
         } else {
             bind.scrollView.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.bgOut));
-            for (SeekBar sb: mSeekBars) {
+            for (SeekBar sb : mSeekBars) {
                 sb.setProgressDrawable(
                         ContextCompat.getDrawable(getActivity(), R.drawable.seek_bar_progress_out));
             }
         }
 
-        // Disable touch events in the 'other' tab
-        if ((mTab == Test.IN && mInOut == 1) || (mTab == Test.OUT && mInOut == 0)) {
-            disableTouchOnLayout(bind.scrollView);
-        }
-
-//        // Layout background listener closes soft keyboard
-//        bind.vasLayoutBackground.setOnTouchListener(new View.OnTouchListener() {
-//            @Override
-//            public boolean onTouch(View v, MotionEvent event) {
-//                // Hide soft keyboard
-//                InputMethodManager imm = (InputMethodManager) getActivity()
-//                        .getSystemService(Context.INPUT_METHOD_SERVICE);
-//                imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
-//                return false;
-//            }
-//        });
-
-
-        // Plus and minus buttons
-        mMinusBtn[0] = bind.btnMinus1;
-        mMinusBtn[1] = bind.btnMinus2;
-        mMinusBtn[2] = bind.btnMinus2;
-        mMinusBtn[3] = bind.btnMinus2;
-
-        mPlusBtn[0] = bind.btnPlus1;
-        mPlusBtn[1] = bind.btnPlus2;
-        mPlusBtn[2] = bind.btnPlus3;
-        mPlusBtn[3] = bind.btnPlus4;
-
-        // Listeners
-        for (int i = 0; i < N_SLIDERS; i++) {
-            mMinusBtn[i].setOnClickListener(this);
-            mPlusBtn[i].setOnClickListener(this);
-        }
-
-        mTextViews[0] = bind.tvKonditionValue;
-        mTextViews[1] = bind.tvSmartaValue;
-        mTextViews[2] = bind.tvStelhetValue;
-        mTextViews[3] = bind.tvTrotthetValue;
+        mTextViews[0] = bind.tvHandfunktionValueH;
+        mTextViews[1] = bind.tvHandfunktionValueV;
+        mTextViews[2] = bind.tvSmartaValueH;
+        mTextViews[3] = bind.tvSmartaValueV;
+        mTextViews[4] = bind.tvStelhetValueH;
+        mTextViews[5] = bind.tvStelhetValueV;
 
         /**
          * Listeners
@@ -230,7 +200,7 @@ public class VASFragment extends Fragment implements View.OnClickListener {
     /**
      * Generates a string representing the state of all components in the test
      *
-     * @return  String content representing state of views in layout
+     * @return String content representing state of views in layout
      */
     private String generateContent() {
         // Create content
@@ -264,72 +234,70 @@ public class VASFragment extends Fragment implements View.OnClickListener {
     }
 
     /**
-     *
      * Plus and minus buttons
      */
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            // Minus buttons
-            case R.id.btn_minus_1: {
-                int progress = mSeekBars[0].getProgress();
-                if (progress > 0)
-                    mSeekBars[0].setProgress(progress - 1);
-                break;
-            }
-            case R.id.btn_minus_2:{
-                int progress = mSeekBars[1].getProgress();
-                if (progress > 0)
-                    mSeekBars[1].setProgress(progress - 1);
-                break;
-            }
-            case R.id.btn_minus_3:{
-                int progress = mSeekBars[2].getProgress();
-                if (progress > 0)
-                    mSeekBars[2].setProgress(progress - 1);
-                break;
-            }
-            case R.id.btn_minus_4:{
-                int progress = mSeekBars[3].getProgress();
-                if (progress > 0)
-                    mSeekBars[3].setProgress(progress - 1);
-                break;
-            }
-
-            // Plus buttons
-            case R.id.btn_plus_1: {
-                int progress = mSeekBars[0].getProgress();
-                if (progress < 100)
-                    mSeekBars[0].setProgress(progress + 1);
-                break;
-            }
-            case R.id.btn_plus_2:{
-                int progress = mSeekBars[1].getProgress();
-                if (progress < 100)
-                    mSeekBars[1].setProgress(progress + 1);
-                break;
-            }
-            case R.id.btn_plus_3:{
-                int progress = mSeekBars[2].getProgress();
-                if (progress < 100)
-                    mSeekBars[2].setProgress(progress + 1);
-                break;
-            }
-            case R.id.btn_plus_4:{
-                int progress = mSeekBars[3].getProgress();
-                if (progress < 100)
-                    mSeekBars[3].setProgress(progress + 1);
-                break;
-            }
-        }
-    }
+//    @Override
+//    public void onClick(View v) {
+//        switch (v.getId()) {
+//            // Minus buttons
+//            case R.id.btn_minus_1h: {
+//                int progress = mSeekBars[0].getProgress();
+//                if (progress > 0)
+//                    mSeekBars[0].setProgress(progress - 1);
+//                break;
+//            }
+//            case R.id.btn_minus_2: {
+//                int progress = mSeekBars[1].getProgress();
+//                if (progress > 0)
+//                    mSeekBars[1].setProgress(progress - 1);
+//                break;
+//            }
+//            case R.id.btn_minus_3: {
+//                int progress = mSeekBars[2].getProgress();
+//                if (progress > 0)
+//                    mSeekBars[2].setProgress(progress - 1);
+//                break;
+//            }
+//            case R.id.btn_minus_4: {
+//                int progress = mSeekBars[3].getProgress();
+//                if (progress > 0)
+//                    mSeekBars[3].setProgress(progress - 1);
+//                break;
+//            }
+//
+//            // Plus buttons
+//            case R.id.btn_plus_1h: {
+//                int progress = mSeekBars[0].getProgress();
+//                if (progress < 100)
+//                    mSeekBars[0].setProgress(progress + 1);
+//                break;
+//            }
+//            case R.id.btn_plus_2: {
+//                int progress = mSeekBars[1].getProgress();
+//                if (progress < 100)
+//                    mSeekBars[1].setProgress(progress + 1);
+//                break;
+//            }
+//            case R.id.btn_plus_3: {
+//                int progress = mSeekBars[2].getProgress();
+//                if (progress < 100)
+//                    mSeekBars[2].setProgress(progress + 1);
+//                break;
+//            }
+//            case R.id.btn_plus_4: {
+//                int progress = mSeekBars[3].getProgress();
+//                if (progress < 100)
+//                    mSeekBars[3].setProgress(progress + 1);
+//                break;
+//            }
+//        }
+//    }
 
     /**
      * Disable all views in a given layout
-     *
      */
-    private void disableTouchOnLayout(ViewGroup vg){
-        for (int i = 0; i < vg.getChildCount(); i++){
+    private void disableTouchOnLayout(ViewGroup vg) {
+        for (int i = 0; i < vg.getChildCount(); i++) {
             View child = vg.getChildAt(i);
             child.setOnTouchListener(new View.OnTouchListener() {
                 @Override
@@ -338,8 +306,8 @@ public class VASFragment extends Fragment implements View.OnClickListener {
                 }
             });
 
-            if (child instanceof ViewGroup){
-                disableTouchOnLayout((ViewGroup)child);
+            if (child instanceof ViewGroup) {
+                disableTouchOnLayout((ViewGroup) child);
             }
         }
     }

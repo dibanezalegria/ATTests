@@ -6,14 +6,15 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.databinding.DataBindingUtil;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.app.NavUtils;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.text.Html;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -22,10 +23,9 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.TextView;
 
+import com.pbluedotsoft.atapp.data.DbContract.TestEntry;
 import com.pbluedotsoft.atapp.data.EXTRAS;
 import com.pbluedotsoft.atapp.databinding.ActivityTestListBinding;
-
-import com.pbluedotsoft.atapp.data.DbContract.TestEntry;
 
 public class TestListActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
@@ -45,7 +45,7 @@ public class TestListActivity extends AppCompatActivity implements LoaderManager
 
     private TestCursorAdapter mCursorAdapter;
 
-    private ActivityTestListBinding bind;
+    private AlertDialog mLoadingDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +68,7 @@ public class TestListActivity extends AppCompatActivity implements LoaderManager
         setTitle(mHeaderString);
 
         // Binding instead of findViewById
-        bind = DataBindingUtil.setContentView(this, R.layout.activity_test_list);
+        ActivityTestListBinding bind = DataBindingUtil.setContentView(this, R.layout.activity_test_list);
 
         bind.btnHelp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,6 +94,16 @@ public class TestListActivity extends AppCompatActivity implements LoaderManager
 
         // Kick off loader
         getSupportLoaderManager().initLoader(TEST_LOADER, null, this);
+        Log.d(LOG_TAG, "onCreate");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // closing dialog avoids leakage
+        if (mLoadingDialog != null) {
+            mLoadingDialog.dismiss();
+        }
     }
 
     @Override
@@ -111,7 +121,13 @@ public class TestListActivity extends AppCompatActivity implements LoaderManager
 
     @Override
     public boolean onContextItemSelected(MenuItem item) {
-        // Start activity with IN or OUT test
+        // Close menu
+        closeContextMenu();
+        // Loading dialog
+        mLoadingDialog = new AlertDialog.Builder(this).create();
+        mLoadingDialog.setMessage("Loading...");
+        mLoadingDialog.show();
+
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
         Uri uri = ContentUris.withAppendedId(TestEntry.CONTENT_URI, info.id);
         Intent intent = new Intent(TestListActivity.this, TestActivity.class);
@@ -201,4 +217,5 @@ public class TestListActivity extends AppCompatActivity implements LoaderManager
             mCursorAdapter.swapCursor(null);
         }
     }
+
 }

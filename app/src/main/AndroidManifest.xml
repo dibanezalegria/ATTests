@@ -40,7 +40,8 @@
             android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
         <activity
             android:name=".ResultTableActivity"
-            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+            android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"
+            android:parentActivityName=".PatientsActivity"/>
         <activity
             android:name=".TestActivity"
             android:parentActivityName=".TestListActivity"

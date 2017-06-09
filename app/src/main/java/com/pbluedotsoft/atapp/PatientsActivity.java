@@ -124,10 +124,10 @@ public class PatientsActivity extends AppCompatActivity implements
                 .getText().toString();
         menu.setHeaderTitle(mPatientName + " - " + mPatientEntry);
         // Menu options
-        menu.add(Menu.NONE, PATIENT_TESTS, 0, "Tester");
-        menu.add(Menu.NONE, PATIENT_RESULTS, 1, "Mätresultat");
-        menu.add(Menu.NONE, PATIENT_EDIT, 2, "Redigera patient");
-        menu.add(Menu.NONE, PATIENT_DELETE, 3, "Ta bort patient");
+        menu.add(Menu.NONE, PATIENT_TESTS, 0, "Tests");
+        menu.add(Menu.NONE, PATIENT_RESULTS, 1, "Results table");
+        menu.add(Menu.NONE, PATIENT_EDIT, 2, "Edit patient details");
+        menu.add(Menu.NONE, PATIENT_DELETE, 3, "Delete patient");
     }
 
     @Override
@@ -172,8 +172,7 @@ public class PatientsActivity extends AppCompatActivity implements
             }
             case PATIENT_DELETE: {
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setMessage("Patienten tas bort.\n\nObs! Alla tester och mätresultat " +
-                        "för patienten försvinner.")
+                builder.setMessage("All tests and results for this patient will be destroyed.")
                         .setTitle(mPatientName + " - " + mPatientEntry)
                         .setPositiveButton("Delete", new DialogInterface.OnClickListener() {
                             @Override

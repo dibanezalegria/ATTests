@@ -37,6 +37,19 @@
         <item name="android:textColor">@color/textColor</item>
     </style>
 
-    <!-- VAS ____________________________________________________________________________________-->
+    <!-- Total Sums Text Output  ________________________________________________________________-->
+    <style name="total_sum_text">
+        <item name="android:background">@drawable/spinner_blue_output_box</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <!-- SOFI ____________________________________________________________________________________-->
+    <style name="sofi_text_radio_button" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">18sp</item>
+        <!-- Use opacity for grey instead of grey color for better results (BE = 75% transparent)-->
+        <item name="android:textColor">#be000000</item>
+        <item name="android:paddingStart">6dp</item>
+    </style>
 
 </resources>

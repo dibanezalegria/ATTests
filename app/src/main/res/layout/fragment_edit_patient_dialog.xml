@@ -13,7 +13,7 @@
             android:background="@color/blue_grey_900"
             android:gravity="center_horizontal"
             android:padding="10dp"
-            android:text="Redigera patient"
+            android:text="Edit patient"
             android:textColor="@android:color/white"
             android:textSize="22sp" />
 
@@ -48,7 +48,7 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginTop="20dp"
                 android:ems="12"
-                android:hint="Entrada"
+                android:hint="Entry"
                 android:inputType="number"
                 android:maxLength="10"
                 android:textSize="20sp" />

@@ -26,7 +26,7 @@
                 android:layout_marginStart="20dp"
                 android:gravity="center_horizontal"
                 android:padding="10dp"
-                android:text="Skapa patient"
+                android:text="New patient"
                 android:textColor="@android:color/white"
                 android:textSize="22sp" />
 
@@ -48,7 +48,7 @@
                 android:layout_marginTop="20dp"
                 android:digits="@string/valid_characters_plus_blank"
                 android:ems="12"
-                android:hint="Namn"
+                android:hint="Name"
                 android:inputType="textFilter"
                 android:maxLength="20"
                 android:textSize="20sp" />
@@ -63,7 +63,7 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginTop="20dp"
                 android:ems="12"
-                android:hint="Entrada"
+                android:hint="Entry"
                 android:inputType="number"
                 android:maxLength="10"
                 android:textSize="20sp" />

@@ -5,4 +5,12 @@
     <!-- Text size for output text views -->
     <dimen name="vas_output_text_size">26sp</dimen>
     <dimen name="vas_default_text_size">26sp</dimen>
+
+    <!-- MÄTRESULTAT ____________________________________________________________________________-->
+    <dimen name="mat_padding">8dp</dimen>
+
+    <!-- SOFI ____________________________________________________________________________-->
+    <!-- Margin start radio groups -->
+    <dimen name="sofi_margin_start_rg">20dp</dimen>
+    <dimen name="sofi_margin_end_rg">16dp</dimen>
 </resources>

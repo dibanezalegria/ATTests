@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.databinding.DataBindingUtil;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
@@ -17,6 +18,8 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -24,9 +27,14 @@ import com.pbluedotsoft.atapp.data.DbContract.TestEntry;
 import com.pbluedotsoft.atapp.data.EXTRAS;
 import com.pbluedotsoft.atapp.databinding.ActivityTestBinding;
 
+import java.util.concurrent.TimeUnit;
+
 public class TestActivity extends AppCompatActivity implements NotesDialogFragment.NotesDialogListener {
 
     private static final String LOG_TAG = TestActivity.class.getSimpleName();
+
+    // Save state constant
+    private static final String STATE_USER_SAVED = "state_user_saved";
 
     // From bundle
     private String mHeaderString;
@@ -43,6 +51,10 @@ public class TestActivity extends AppCompatActivity implements NotesDialogFragme
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
+
+//        // Long task ________________________________________________________________________________________ DEBUG
+//        LoadingActivity load = new LoadingActivity();
+//        load.execute();
 
         // Keep screen on
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
@@ -75,6 +87,17 @@ public class TestActivity extends AppCompatActivity implements NotesDialogFragme
 
         // Binding instead of findViewById
         bind = DataBindingUtil.setContentView(this, R.layout.activity_test);
+
+//        bind.progressLoader.setVisibility(View.VISIBLE);
+//
+//        try {
+//            for (int i = 0; i < 5; i++) {
+//                Log.d(LOG_TAG, "Emulating some task.. Step " + i);
+//                TimeUnit.SECONDS.sleep(1);
+//            }
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
 
         // Test title
         bind.tvTestTitle.setText(testName + " " + testTitle);
@@ -132,9 +155,22 @@ public class TestActivity extends AppCompatActivity implements NotesDialogFragme
         } else
             bind.viewpager.setCurrentItem(1);
 
+//        bind.progressLoader.setVisibility(View.GONE);
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putBoolean(STATE_USER_SAVED, mUserHasSaved);
+        super.onSaveInstanceState(outState);
+    }
 
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        if (savedInstanceState != null) {
+            mUserHasSaved = savedInstanceState.getBoolean(STATE_USER_SAVED);
+        }
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -171,6 +207,9 @@ public class TestActivity extends AppCompatActivity implements NotesDialogFragme
         switch (testCode) {
             case "VAS":
                 ref = R.string.vas_manual;
+                break;
+            case "SOFI":
+                ref = R.string.sofi_manual;
                 break;
         }
         AlertDialog dialog = new AlertDialog.Builder(this).create();
@@ -216,7 +255,6 @@ public class TestActivity extends AppCompatActivity implements NotesDialogFragme
 
     /**
      * Interface NotesDialogFragment.NotesDialogListener method implementation
-     *
      */
     @Override
     public void onSaveNotesDialogFragment(String notesIn, String notesOut) {
@@ -264,4 +302,5 @@ public class TestActivity extends AppCompatActivity implements NotesDialogFragme
     public void setUserHasSaved(boolean value) {
         mUserHasSaved = value;
     }
+
 }

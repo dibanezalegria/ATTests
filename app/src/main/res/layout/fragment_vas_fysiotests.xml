@@ -8,19 +8,19 @@
         android:layout_height="match_parent"
         android:background="@color/bgIn"
         android:orientation="vertical"
-        android:paddingBottom="30dp"
-        android:paddingTop="30dp"
         tools:context="com.pbluedotsoft.atapp.TestActivity">
 
         <LinearLayout
             android:id="@+id/vas_layout_background"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
             android:paddingEnd="16dp"
             android:paddingStart="16dp"
-            android:orientation="vertical">
+            android:paddingTop="30dp">
 
-            <!-- Handfunktion slider -->
+            <!-- Kondition slider -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -33,75 +33,60 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/blue_grey_400"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="8dp"
                     android:gravity="center">
 
                     <!-- Title Label -->
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="40"
+                        android:layout_weight="1"
                         android:gravity="start"
-                        android:text="Handfunktion"
+                        android:paddingStart="8dp"
+                        android:text="Kondition"
                         android:textColor="@android:color/white"
                         android:textSize="@dimen/vas_default_text_size" />
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="30"
+                        android:layout_weight="1"
                         android:gravity="center">
 
-                        <TextView
+                        <ImageButton
+                            android:id="@+id/btn_minus_1h"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Höger"
-                            android:textColor="@color/blue_grey_800"
-                            android:textSize="22sp" />
+                            android:background="@color/transparent"
+                            android:clickable="true"
+                            android:src="@drawable/ic_arrow_drop_down_black_36dp"
+                            android:tint="@color/blue_grey_500" />
 
+                        <!-- Output -->
                         <TextView
                             android:id="@+id/tv_handfunktion_value_h"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
                             android:ems="2"
                             android:gravity="center"
                             android:textColor="@color/grey_200"
                             android:textSize="@dimen/vas_output_text_size" />
+
+                        <ImageButton
+                            android:id="@+id/btn_plus_1h"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:clickable="true"
+                            android:src="@drawable/ic_arrow_drop_up_black_36dp"
+                            android:tint="@color/blue_grey_500" />
                     </LinearLayout>
 
-                    <LinearLayout
+                    <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="30"
-                        android:gravity="center">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Vänster"
-                            android:textColor="@color/blue_grey_800"
-                            android:textSize="22sp" />
-
-                        <TextView
-                            android:id="@+id/tv_handfunktion_value_v"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:ems="2"
-                            android:gravity="center"
-                            android:textColor="@color/grey_200"
-                            android:textSize="@dimen/vas_output_text_size" />
-                    </LinearLayout>
+                        android:layout_weight="1" />
                 </LinearLayout>
-
-                <!-- handfuktion höger -->
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:paddingStart="8dp"
-                    android:text="Höger"
-                    android:textAppearance="@style/TextCustomNormal" />
 
                 <!-- SeekBar -->
                 <LinearLayout
@@ -111,62 +96,6 @@
 
                     <SeekBar
                         android:id="@+id/seekbar_handfunktion_h"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:progress="0"
-                        android:progressDrawable="@drawable/seek_bar_progress_in"
-                        android:thumb="@drawable/seekbar_thumb_states" />
-                </LinearLayout>
-
-                <!-- Values labels -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="12dp"
-                        android:layout_weight="1"
-                        android:gravity="start"
-                        android:text="0"
-                        android:textAppearance="?android:textAppearanceMedium" />
-
-                    <!--<TextView-->
-                    <!--android:layout_width="0dp"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_weight="1"-->
-                    <!--android:gravity="center"-->
-                    <!--android:text="50"-->
-                    <!--android:textAppearance="?android:textAppearanceMedium"/>-->
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:layout_weight="1"
-                        android:gravity="end"
-                        android:text="100"
-                        android:textAppearance="?android:textAppearanceMedium" />
-                </LinearLayout>
-
-                <!-- handfunktion vänster -->
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:paddingStart="8dp"
-                    android:text="Vänster"
-                    android:textAppearance="@style/TextCustomNormal" />
-
-                <!-- SeekBar -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp">
-
-                    <SeekBar
-                        android:id="@+id/seekbar_handfunktion_v"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:progress="0"
@@ -220,17 +149,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/blue_grey_400"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="8dp"
                     android:gravity="center">
 
                     <!-- Title Label -->
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="40"
+                        android:layout_weight="1"
                         android:gravity="start"
-
+                        android:paddingStart="8dp"
                         android:text="Smärta"
                         android:textColor="@android:color/white"
                         android:textSize="@dimen/vas_default_text_size" />
@@ -238,114 +165,45 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="30"
+                        android:layout_weight="1"
                         android:gravity="center">
 
-                        <TextView
+                        <ImageButton
+                            android:id="@+id/btn_minus_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Höger"
-                            android:textColor="@color/blue_grey_800"
-                            android:textSize="22sp" />
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/transparent"
+                            android:clickable="true"
+                            android:src="@drawable/ic_arrow_drop_down_black_36dp"
+                            android:tint="@color/blue_grey_500" />
 
+                        <!-- Output -->
                         <TextView
-                            android:id="@+id/tv_smarta_value_h"
+                            android:id="@+id/tv_smarta_value"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="2"
                             android:gravity="center"
                             android:textColor="@color/grey_200"
                             android:textSize="@dimen/vas_output_text_size" />
-                    </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="30"
-                        android:gravity="center">
-
-                        <TextView
+                        <ImageButton
+                            android:id="@+id/btn_plus_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Vänster"
-                            android:textColor="@color/blue_grey_800"
-                            android:textSize="22sp" />
-
-                        <TextView
-                            android:id="@+id/tv_smarta_value_v"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:ems="2"
-                            android:gravity="center"
-                            android:textColor="@color/grey_200"
-                            android:textSize="@dimen/vas_output_text_size" />
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/transparent"
+                            android:clickable="true"
+                            android:src="@drawable/ic_arrow_drop_up_black_36dp"
+                            android:tint="@color/blue_grey_500" />
                     </LinearLayout>
-                </LinearLayout>
-
-                <!-- smärta höger -->
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:paddingStart="8dp"
-                    android:text="Höger"
-                    android:textAppearance="@style/TextCustomNormal" />
-
-                <!-- SeekBar -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp">
-
-                    <SeekBar
-                        android:id="@+id/seekbar_smarta_h"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:progress="0"
-                        android:progressDrawable="@drawable/seek_bar_progress_in"
-                        android:thumb="@drawable/seekbar_thumb_states" />
-                </LinearLayout>
-
-                <!-- Values labels -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="12dp"
-                        android:layout_weight="1"
-                        android:gravity="start"
-                        android:text="0"
-                        android:textAppearance="?android:textAppearanceMedium" />
-
-                    <!--<TextView-->
-                    <!--android:layout_width="0dp"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_weight="1"-->
-                    <!--android:gravity="center"-->
-                    <!--android:text="50"-->
-                    <!--android:textAppearance="?android:textAppearanceMedium"/>-->
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:layout_weight="1"
-                        android:gravity="end"
-                        android:text="100"
-                        android:textAppearance="?android:textAppearanceMedium" />
+                        android:layout_weight="1" />
                 </LinearLayout>
-
-                <!-- smärta vänster -->
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:paddingStart="8dp"
-                    android:text="Vänster"
-                    android:textAppearance="@style/TextCustomNormal" />
 
                 <!-- SeekBar -->
                 <LinearLayout
@@ -408,17 +266,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/blue_grey_400"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="8dp"
                     android:gravity="center">
 
                     <!-- Title Label -->
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="40"
+                        android:layout_weight="1"
                         android:gravity="start"
-
+                        android:paddingStart="8dp"
                         android:text="Stelhet"
                         android:textColor="@android:color/white"
                         android:textSize="@dimen/vas_default_text_size" />
@@ -426,58 +282,45 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="30"
+                        android:layout_weight="1"
                         android:gravity="center">
 
-                        <TextView
+                        <ImageButton
+                            android:id="@+id/btn_minus_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Höger"
-                            android:textColor="@color/blue_grey_800"
-                            android:textSize="22sp" />
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/transparent"
+                            android:clickable="true"
+                            android:src="@drawable/ic_arrow_drop_down_black_36dp"
+                            android:tint="@color/blue_grey_500" />
 
+                        <!-- Output -->
                         <TextView
-                            android:id="@+id/tv_stelhet_value_h"
+                            android:id="@+id/tv_stelhet_value"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="2"
                             android:gravity="center"
                             android:textColor="@color/grey_200"
                             android:textSize="@dimen/vas_output_text_size" />
+
+                        <ImageButton
+                            android:id="@+id/btn_plus_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/transparent"
+                            android:clickable="true"
+                            android:src="@drawable/ic_arrow_drop_up_black_36dp"
+                            android:tint="@color/blue_grey_500" />
                     </LinearLayout>
 
-                    <LinearLayout
+                    <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="30"
-                        android:gravity="center">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Vänster"
-                            android:textColor="@color/blue_grey_800"
-                            android:textSize="22sp" />
-
-                        <TextView
-                            android:id="@+id/tv_stelhet_value_v"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:ems="2"
-                            android:gravity="center"
-                            android:textColor="@color/grey_200"
-                            android:textSize="@dimen/vas_output_text_size" />
-                    </LinearLayout>
+                        android:layout_weight="1" />
                 </LinearLayout>
-
-                <!-- Stelhet höger -->
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:paddingStart="8dp"
-                    android:text="Höger"
-                    android:textAppearance="@style/TextCustomNormal" />
 
                 <!-- SeekBar -->
                 <LinearLayout
@@ -486,7 +329,7 @@
                     android:layout_marginTop="16dp">
 
                     <SeekBar
-                        android:id="@+id/seekbar_stelhet_h"
+                        android:id="@+id/seekbar_stelhet"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:progress="0"
@@ -525,15 +368,76 @@
                         android:text="100"
                         android:textAppearance="?android:textAppearanceMedium" />
                 </LinearLayout>
+            </LinearLayout>
 
-                <!-- Stelhet vänster -->
-                <TextView
+            <!-- Trötthet slider -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/vas_slider_padding_top"
+                tools:context="com.example.android.slider.MainActivity">
+
+                <!-- Top: Title and Output text view -->
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:paddingStart="8dp"
-                    android:text="Vänster"
-                    android:textAppearance="@style/TextCustomNormal" />
+                    android:background="@color/blue_grey_400"
+                    android:gravity="center">
+
+                    <!-- Title Label -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:paddingStart="8dp"
+                        android:text="Trötthet"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/vas_default_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:id="@+id/btn_minus_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/transparent"
+                            android:clickable="true"
+                            android:src="@drawable/ic_arrow_drop_down_black_36dp"
+                            android:tint="@color/blue_grey_500" />
+
+                        <!-- Output -->
+                        <TextView
+                            android:id="@+id/tv_trotthet_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="2"
+                            android:gravity="center"
+                            android:textColor="@color/grey_200"
+                            android:textSize="@dimen/vas_output_text_size" />
+
+                        <ImageButton
+                            android:id="@+id/btn_plus_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/transparent"
+                            android:clickable="true"
+                            android:src="@drawable/ic_arrow_drop_up_black_36dp"
+                            android:tint="@color/blue_grey_500" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
 
                 <!-- SeekBar -->
                 <LinearLayout
@@ -542,7 +446,7 @@
                     android:layout_marginTop="16dp">
 
                     <SeekBar
-                        android:id="@+id/seekbar_stelhet_v"
+                        android:id="@+id/seekbar_trotthet"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:progress="0"

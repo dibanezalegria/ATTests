@@ -17,7 +17,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Patienter"
+                android:text="PATIENTS"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />
 
@@ -39,7 +39,8 @@
                 android:id="@+id/layout_relative_empty_list"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true">
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="128dp">
 
                 <ImageView
                     android:id="@+id/img_empty_list"
@@ -55,7 +56,7 @@
                     android:layout_below="@+id/img_empty_list"
                     android:layout_centerHorizontal="true"
                     android:paddingTop="16dp"
-                    android:text="Click on icon to add new patients"
+                    android:text="Click icon below to add patients"
                     android:textAppearance="?android:textAppearanceLarge"
                     android:textColor="@color/blue_grey_800" />
             </RelativeLayout>

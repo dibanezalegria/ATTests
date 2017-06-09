@@ -43,7 +43,7 @@
                     android:layout_marginStart="32dp"
                     android:ems="4"
                     android:gravity="center_horizontal"
-                    android:text="TESTER"
+                    android:text="TESTS"
                     android:textColor="@android:color/white"
                     android:textSize="20sp" />
             </LinearLayout>
@@ -96,4 +96,5 @@
             android:background="@color/blue_grey_100" />
 
     </LinearLayout>
+
 </layout>
