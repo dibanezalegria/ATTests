@@ -6,7 +6,7 @@
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/bgIn"
+        android:background="@color/background_in"
         android:orientation="vertical"
         tools:context="com.pbluedotsoft.atapp.TestActivity">
 
@@ -492,7 +492,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
-                android:background="@drawable/custom_button_spara"
+                android:background="@drawable/button_spara"
                 android:text="@string/done_button"
                 android:textAppearance="@style/TextCustomNormal"
                 android:textColor="@android:color/white" />

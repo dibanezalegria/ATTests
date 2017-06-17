@@ -96,7 +96,7 @@
                         android:layout_marginRight="24dp"
                         android:layout_marginTop="24dp"
                         android:layout_weight="25"
-                        android:background="@drawable/custom_button_cancel_red"
+                        android:background="@drawable/button_cancel_red"
                         android:text="Cancel"
                         android:textSize="18sp"
                         android:textColor="@android:color/white" />
@@ -107,7 +107,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="24dp"
                         android:layout_weight="75"
-                        android:background="@drawable/custom_button_spara"
+                        android:background="@drawable/button_spara"
                         android:text="Register"
                         android:textSize="18sp"
                         android:textColor="@android:color/white" />

@@ -11,13 +11,9 @@
     <color name="testBackground">@color/blue_grey_200</color>
 
     <!-- Fragment IN and OUT background and brighter color for separators and editable text views -->
-    <color name="test_background_color">@color/blue_grey_200</color>
-
-    <color name="bgIn">@color/blue_grey_200</color>
-    <color name="bgBrightIn">@color/blue_grey_100</color>
-
-    <color name="bgOut">@color/blue_grey_50</color>
-    <color name="bgBrightOut">#FFFFFF</color>
+    <color name="background_in">@color/blue_grey_200</color>
+    <color name="background_out">@color/blue_grey_50</color>
+    <color name="background_value_output">@color/blue_grey_100</color>
 
     <!-- In and Out states -->
     <color name="complete">@color/green_500</color>

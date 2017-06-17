@@ -57,67 +57,133 @@
   -->
     <string name="sofi_manual">SOFI instructions manual</string>
 
-    <string name="hand_title">Handfunktion</string>
-    <string name="arm_title">Armfunktion</string>
-    <string name="ben_title">Benfunktion</string>
-    
-    <string name="q1">1. Gripa om cylinder med handflatan och alla fingrar tätt. Män 8 cm, kvinnor 6 cm cylinderdiam.</string>
-    <string name="q2">2. Fingerflexion. Gripa om en penna fullständigt med dig II-V.</string>
-    <string name="q3">3. Runt pincettgrepp.</string>
-    <string name="q4">4. Opposition av tummens topp mot basen av dig V.</string>
-    <string name="q5">5. Hand och fingrar mot nackens processus spinosus med armen abducerad 90°</string>
-    <string name="q6">6. Supination med 90° flexion I armbågar med handryggen (MCP II-V) och underarmarna på bordet
+    <string name="sofi_hand_title">Handfunktion</string>
+    <string name="sofi_arm_title">Armfunktion</string>
+    <string name="sofi_ben_title">Benfunktion</string>
+
+    <string name="sofi_q1">1. Gripa om cylinder med handflatan och alla fingrar tätt. Män 8 cm, kvinnor 6 cm cylinderdiam.</string>
+    <string name="sofi_q2">2. Fingerflexion. Gripa om en penna fullständigt med dig II-V.</string>
+    <string name="sofi_q3">3. Runt pincettgrepp.</string>
+    <string name="sofi_q4">4. Opposition av tummens topp mot basen av dig V.</string>
+    <string name="sofi_q5">5. Hand och fingrar mot nackens processus spinosus med armen abducerad 90°</string>
+    <string name="sofi_q6">6. Supination med 90° flexion I armbågar med handryggen (MCP II-V) och underarmarna på bordet
         med armbågarna mot midjan.</string>
-    <string name="q7">7. Armbågsextension i stående mätt med goniometer.</string>
-    <string name="q8">8. Handledsextension mätt med goniometer sittande på stol med underarmarna understödda mot bordet.</string>
-    <string name="q9">9. Sittande på stol med rygg mot ryggstöd och stöd för fötterna. Placera häl ovanpå motsatt knä.</string>
-    <string name="q10">10. Knäextension i ryggliggande. Mäts med goniometer.</string>
-    <string name="q11">11. Lätt balansstöd (sjukgymnastens händer). Placera en fot på vippbrädans mittpunkt.
+    <string name="sofi_q7">7. Armbågsextension i stående mätt med goniometer.</string>
+    <string name="sofi_q8">8. Handledsextension mätt med goniometer sittande på stol med underarmarna understödda mot bordet.</string>
+    <string name="sofi_q9">9. Sittande på stol med rygg mot ryggstöd och stöd för fötterna. Placera häl ovanpå motsatt knä.</string>
+    <string name="sofi_q10">10. Knäextension i ryggliggande. Mäts med goniometer.</string>
+    <string name="sofi_q11">11. Lätt balansstöd (sjukgymnastens händer). Placera en fot på vippbrädans mittpunkt.
         Tippa brädan maximalt framåt och sedan bakåt. Rörelsen ska ske endast i fotleden.</string>
-    <string name="q12">12. Tåhävning med ett ben i taget, balansstöd som i nr. 11</string>
+    <string name="sofi_q12">12. Tåhävning med ett ben i taget, balansstöd som i nr. 11</string>
 
-    <string name="q1a0">0 - fullt möjligt</string>
-    <string name="q1a1">1 - griper runt med alla fingrar men handflatan har ej full kontakt med cylindern</string>
-    <string name="q1a2">2 - går ej</string>
-    <string name="q2a0">0 - fullt möjligt</string>
-    <string name="q2a1">1 - kan gripa om en cylinder (2 cm diam) fullständigt med dig II-V</string>
-    <string name="q2a2">2 - går ej</string>
-    <string name="q3a0">0 - fullt möjligt</string>
-    <string name="q3a1">1 - klarar D-format pincettgrepp</string>
-    <string name="q3a2">2 - går ej</string>
-    <string name="q4a0">0 - fullt möjligt</string>
-    <string name="q4a1">1 - klarar opposition av tummen mot handflatan och passera pekfinger, tummen behöver ej
+    <string name="sofi_q1a0">0 - fullt möjligt</string>
+    <string name="sofi_q1a1">1 - griper runt med alla fingrar men handflatan har ej full kontakt med cylindern</string>
+    <string name="sofi_q1a2">2 - går ej</string>
+    <string name="sofi_q2a0">0 - fullt möjligt</string>
+    <string name="sofi_q2a1">1 - kan gripa om en cylinder (2 cm diam) fullständigt med dig II-V</string>
+    <string name="sofi_q2a2">2 - går ej</string>
+    <string name="sofi_q3a0">0 - fullt möjligt</string>
+    <string name="sofi_q3a1">1 - klarar D-format pincettgrepp</string>
+    <string name="sofi_q3a2">2 - går ej</string>
+    <string name="sofi_q4a0">0 - fullt möjligt</string>
+    <string name="sofi_q4a1">1 - klarar opposition av tummen mot handflatan och passera pekfinger, tummen behöver ej
         vidröra handflatan</string>
-    <string name="q4a2">2 - går ej</string>
+    <string name="sofi_q4a2">2 - går ej</string>
 
-    <string name="q5a0">0 - fullt möjligt</string>
-    <string name="q5a1">1 - klarar ovanstående men med &lt;90° abd</string>
-    <string name="q5a2">2 - klarar ej ovanstående</string>
-    <string name="q6a0">0 - fullt möjligt</string>
-    <string name="q6a1">1 - klarar 45° eller mer</string>
-    <string name="q6a2">2 - klarar mindre än halvvägs (&lt;45°)</string>
-    <string name="q7a0">0 - full extension, 0°</string>
-    <string name="q7a1">1 - 15° eller mindre  extensionsdefekt </string>
-    <string name="q7a2">2 - mer än 15° extensionsdefekt</string>
-    <string name="q8a0">0 - extension >= 60°</string>
-    <string name="q8a1">1 - extension 30-59°</string>
-    <string name="q8a2">2 - extension &lt;30°</string>
+    <string name="sofi_q5a0">0 - fullt möjligt</string>
+    <string name="sofi_q5a1">1 - klarar ovanstående men med &lt;90° abd</string>
+    <string name="sofi_q5a2">2 - klarar ej ovanstående</string>
+    <string name="sofi_q6a0">0 - fullt möjligt</string>
+    <string name="sofi_q6a1">1 - klarar 45° eller mer</string>
+    <string name="sofi_q6a2">2 - klarar mindre än halvvägs (&lt;45°)</string>
+    <string name="sofi_q7a0">0 - full extension, 0°</string>
+    <string name="sofi_q7a1">1 - 15° eller mindre  extensionsdefekt </string>
+    <string name="sofi_q7a2">2 - mer än 15° extensionsdefekt</string>
+    <string name="sofi_q8a0">0 - extension >= 60°</string>
+    <string name="sofi_q8a1">1 - extension 30-59°</string>
+    <string name="sofi_q8a2">2 - extension &lt;30°</string>
 
-    <string name="q9a0">0 - fullt möjligt</string>
-    <string name="q9a1">1 - hälen kan lyftas halvvägs upp på motsatt underben</string>
-    <string name="q9a2">2 - går ej</string>
-    <string name="q10a0">0 - full extension, 0°</string>
-    <string name="q10a1">1 - 10° eller mindre extensionsdefekt</string>
-    <string name="q10a2">2 - mer än 10° extensionsdefekt</string>
-    <string name="q11a0">0 - klarar att tippa så hälsidan nuddar golvet</string>
-    <string name="q11a1">1 - klarar att tippa med max 2 cm från golvet </string>
-    <string name="q11a2">2 - går ej</string>
-    <string name="q12a0">0 - fullt möjligt</string>
-    <string name="q12a1">1 - fullt möjligt men gör ont</string>
-    <string name="q12a2">2 - går ej </string>
+    <string name="sofi_q9a0">0 - fullt möjligt</string>
+    <string name="sofi_q9a1">1 - hälen kan lyftas halvvägs upp på motsatt underben</string>
+    <string name="sofi_q9a2">2 - går ej</string>
+    <string name="sofi_q10a0">0 - full extension, 0°</string>
+    <string name="sofi_q10a1">1 - 10° eller mindre extensionsdefekt</string>
+    <string name="sofi_q10a2">2 - mer än 10° extensionsdefekt</string>
+    <string name="sofi_q11a0">0 - klarar att tippa så hälsidan nuddar golvet</string>
+    <string name="sofi_q11a1">1 - klarar att tippa med max 2 cm från golvet </string>
+    <string name="sofi_q11a2">2 - går ej</string>
+    <string name="sofi_q12a0">0 - fullt möjligt</string>
+    <string name="sofi_q12a1">1 - fullt möjligt men gör ont</string>
+    <string name="sofi_q12a2">2 - går ej </string>
 
-    <string name="summa">Summa (0&#8211;16p)</string>
+    <string name="sofi_summa">Summa (0&#8211;16p)</string>
 
+    <!--
+  ________________________________________________________________________________________________
+
+                                              HAQ ADL-index
+
+  ________________________________________________________________________________________________
+  -->
+    <string name="haq_manual">HAQ ADL-index instructions manual</string>
+
+    <string name="haq_title_0">Klädsel och toalett</string>
+    <string name="haq_title_1">Uppresning</string>
+    <string name="haq_title_2">Måltider</string>
+    <string name="haq_title_3">Gång</string>
+    <string name="haq_title_4">Hygien</string>
+    <string name="haq_title_5">Räckvidd</string>
+    <string name="haq_title_6">Gripförmåga</string>
+    <string name="haq_title_7">Andra aktiviteter</string>
+
+    <string name="haq_q0">Kan Du klä på Dig inkl knyta skoband och knäppa knappar?</string>
+    <string name="haq_q1">Kan Du tvätta håret?</string>
+    <string name="haq_q2">Kan Du resa Dig från stol som saknar armstöd?</string>
+    <string name="haq_q3">Kan Du komma i och ur säng?</string>
+    <string name="haq_q4">Kan Du skära kött?</string>
+    <string name="haq_q5">Kan Du lyfta ett fullt glas till munnen?</string>
+    <string name="haq_q6">Kan Du laga Din egen måltid?</string>
+    <string name="haq_q7">Kan Du gå utomhus på plan mark?</string>
+    <string name="haq_q8">Kan Du gå nedför fem trappsteg?</string>
+    <string name="haq_q9">Kan Du tvätta och torka Dig överallt?</string>
+    <string name="haq_q10">Kan Du bada i badkar?</string>
+    <string name="haq_q11">Kan Du sätta Dig på och resa Dig från toalettstol?</string>
+    <string name="haq_q12">Kan Du ta ned ett 2-kilospaket med t.ex. socker från en hylla i huvudhöjd?</string>
+    <string name="haq_q13">Kan Du böja Dig ned och plocka upp kläder från golvet?</string>
+    <string name="haq_q14">Kan Du öppna bildörrar?</string>
+    <string name="haq_q15">Kan Du öppna burkar med skruvlock som varit öppnade förut?</string>
+    <string name="haq_q16">Kan Du öppna vattenkranen?</string>
+    <string name="haq_q17">Kan Du lära Dina inköp till hushållet?</string>
+    <string name="haq_q18">Kan Du komma i och ur en bil?</string>
+    <string name="haq_q19">Kan Du dammsuga?</string>
+
+    <string name="haq_a0">Utan svårighet</string>
+    <string name="haq_a1">Med viss svårighet</string>
+    <string name="haq_a2">Mycket svårt</string>
+    <string name="haq_a3">Hjälpmedel</string>
+    <string name="haq_a4">Annan person</string>
+    <string name="haq_a5">Omöjligt</string>
+
+    <string name="haq_summa">Summa</string>
+    <string name="haq_total_summa">Total summa (0&#8211;3p, 0 = ua)</string>
+
+    <!--
+ ________________________________________________________________________________________________
+
+                                             JAMAR
+
+ ________________________________________________________________________________________________
+ -->
+    <string name="jamar_manual">JAMAR instructions manual</string>
+
+    <!--
+ ________________________________________________________________________________________________
+
+                                             VIGORIMETER
+
+ ________________________________________________________________________________________________
+ -->
+    <string name="vigo_manual">VIGORIMETER instructions manual</string>
 
 
 </resources>

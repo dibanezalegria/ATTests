@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_in"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        tools:context="com.pbluedotsoft.atapp.TestActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="26dp"
+            android:paddingStart="26dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/haq_title_0"
+                android:textAppearance="@style/TextCustomLarge" />
+
+            <TextView
+                android:id="@+id/tv_q0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/haq_q0"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/haq_spinner_margin_start"
+                android:background="@color/blue_grey_100">
+
+                <Spinner
+                    android:id="@+id/spin_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/haq_q1"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/haq_spinner_margin_start"
+                android:background="@color/blue_grey_100">
+
+                <Spinner
+                    android:id="@+id/spin_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/haq_summa"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_sum0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/sofi_tv_sum"
+                    android:gravity="center"
+                    android:minEms="2"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    tools:text="1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/haq_title_1"
+                android:textAppearance="@style/TextCustomLarge" />
+
+            <TextView
+                android:id="@+id/tv_q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/haq_q2"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/haq_spinner_margin_start"
+                android:background="@color/blue_grey_100">
+
+                <Spinner
+                    android:id="@+id/spin_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/haq_q3"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/haq_spinner_margin_start"
+                android:background="@color/blue_grey_100">
+
+                <Spinner
+                    android:id="@+id/spin_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/haq_summa"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_sum1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/sofi_tv_sum"
+                    android:gravity="center"
+                    android:minEms="2"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    tools:text="1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/haq_title_2"
+                android:textAppearance="@style/TextCustomLarge" />
+
+            <TextView
+                android:id="@+id/tv_q4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/haq_q4"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/haq_spinner_margin_start"
+                android:background="@color/blue_grey_100">
+
+                <Spinner
+                    android:id="@+id/spin_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_q5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/haq_q5"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/haq_spinner_margin_start"
+                android:background="@color/blue_grey_100">
+
+                <Spinner
+                    android:id="@+id/spin_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_q6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/haq_q6"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/haq_spinner_margin_start"
+                android:background="@color/blue_grey_100">
+
+                <Spinner
+                    android:id="@+id/spin_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/haq_summa"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_sum2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/sofi_tv_sum"
+                    android:gravity="center"
+                    android:minEms="2"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    tools:text="1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/haq_title_3"
+                android:textAppearance="@style/TextCustomLarge" />
+
+            <TextView
+                android:id="@+id/tv_q7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/haq_q7"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/haq_spinner_margin_start"
+                android:background="@color/blue_grey_100">
+
+                <Spinner
+                    android:id="@+id/spin_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_q8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/haq_q8"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/haq_spinner_margin_start"
+                android:background="@color/blue_grey_100">
+
+                <Spinner
+                    android:id="@+id/spin_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/haq_summa"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_sum3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/sofi_tv_sum"
+                    android:gravity="center"
+                    android:minEms="2"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    tools:text="1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/haq_title_4"
+                android:textAppearance="@style/TextCustomLarge" />
+
+            <TextView
+                android:id="@+id/tv_q9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/haq_q9"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/haq_spinner_margin_start"
+                android:background="@color/blue_grey_100">
+
+                <Spinner
+                    android:id="@+id/spin9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_q10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/haq_q10"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/haq_spinner_margin_start"
+                android:background="@color/blue_grey_100">
+
+                <Spinner
+                    android:id="@+id/spin_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_q11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/haq_q11"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/haq_spinner_margin_start"
+                android:background="@color/blue_grey_100">
+
+                <Spinner
+                    android:id="@+id/spin_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/haq_summa"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_sum4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/sofi_tv_sum"
+                    android:gravity="center"
+                    android:minEms="2"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    tools:text="1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/haq_title_5"
+                android:textAppearance="@style/TextCustomLarge" />
+
+            <TextView
+                android:id="@+id/tv_q12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/haq_q12"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/haq_spinner_margin_start"
+                android:background="@color/blue_grey_100">
+
+                <Spinner
+                    android:id="@+id/spin_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_q13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/haq_q13"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/haq_spinner_margin_start"
+                android:background="@color/blue_grey_100">
+
+                <Spinner
+                    android:id="@+id/spin_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/haq_summa"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_sum5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/sofi_tv_sum"
+                    android:gravity="center"
+                    android:minEms="2"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    tools:text="1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/haq_title_6"
+                android:textAppearance="@style/TextCustomLarge" />
+
+            <TextView
+                android:id="@+id/tv_q14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/haq_q14"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/haq_spinner_margin_start"
+                android:background="@color/blue_grey_100">
+
+                <Spinner
+                    android:id="@+id/spin_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_q15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/haq_q15"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/haq_spinner_margin_start"
+                android:background="@color/blue_grey_100">
+
+                <Spinner
+                    android:id="@+id/spin_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_q16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/haq_q16"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/haq_spinner_margin_start"
+                android:background="@color/blue_grey_100">
+
+                <Spinner
+                    android:id="@+id/spin_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/haq_summa"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_sum6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/sofi_tv_sum"
+                    android:gravity="center"
+                    android:minEms="2"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    tools:text="1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/haq_title_7"
+                android:textAppearance="@style/TextCustomLarge" />
+
+            <TextView
+                android:id="@+id/tv_q17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/haq_q17"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/haq_spinner_margin_start"
+                android:background="@color/blue_grey_100">
+
+                <Spinner
+                    android:id="@+id/spin_17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_q18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/haq_q18"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/haq_spinner_margin_start"
+                android:background="@color/blue_grey_100">
+
+                <Spinner
+                    android:id="@+id/spin_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_q19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/haq_q19"
+                android:textAppearance="@style/TextCustomNormal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/haq_spinner_margin_start"
+                android:background="@color/blue_grey_100">
+
+                <Spinner
+                    android:id="@+id/spin_19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/haq_summa"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_sum7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/sofi_tv_sum"
+                    android:gravity="center"
+                    android:minEms="2"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    tools:text="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/haq_total_summa"
+                    android:textAppearance="@style/TextCustomLarge" />
+
+                <TextView
+                    android:id="@+id/tv_total_sum"
+                    style="@style/total_sum_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center"
+                    android:minEms="3" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_spara"
+                android:text="@string/done_button"
+                android:textAppearance="@style/TextCustomNormal"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>
+
+

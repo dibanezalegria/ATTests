@@ -19,7 +19,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:background="@drawable/custom_button_logout"
+                android:background="@drawable/button_logout"
                 android:text="Log out"
                 android:visibility="gone" />
 
@@ -33,7 +33,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
-                android:background="@drawable/custom_button_reset_app"
+                android:background="@drawable/button_reset_app"
                 android:text="RESET APP (all patients and their tests)"
                 android:textColor="@android:color/white" />
         </LinearLayout>

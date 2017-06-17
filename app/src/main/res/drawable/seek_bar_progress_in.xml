@@ -14,7 +14,7 @@
                 />
             <stroke
                 android:width="8dp"
-                android:color="@color/bgIn" />
+                android:color="@color/background_in" />
 
         </shape>
     </item>
@@ -28,7 +28,7 @@
                 <corners android:radius="0dp" />
                 <stroke
                     android:width="8dp"
-                    android:color="@color/bgIn" />
+                    android:color="@color/background_in" />
             </shape>
         </clip>
     </item>

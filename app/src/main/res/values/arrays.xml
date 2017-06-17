@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- HAQ -->
+    <string-array name="haq_spinner_values">
+        <item>-</item>
+        <item>@string/haq_a0</item>
+        <item>@string/haq_a1</item>
+        <item>@string/haq_a2</item>
+        <item>@string/haq_a3</item>
+        <item>@string/haq_a4</item>
+        <item>@string/haq_a5</item>
+    </string-array>
+
+    <!-- JAMAR Spinner values -->
+    <string-array name="jamar_gender_spinner">
+        <item>-</item>
+        <item>Man</item>
+        <item>Kvinna</item>
+    </string-array>
+
+    <!-- VIGO Spinner values -->
+    <string-array name="vigo_gender_spinner">
+        <item>-</item>
+        <item>Man</item>
+        <item>Kvinna</item>
+        <item>Tonåring</item>
+        <item>Barn</item>
+    </string-array>
+
+</resources>

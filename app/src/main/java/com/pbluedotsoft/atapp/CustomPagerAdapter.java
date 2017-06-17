@@ -37,6 +37,15 @@ public class CustomPagerAdapter extends FragmentPagerAdapter {
             case "SOFI":
                 fragment = new SofiFragment();
                 break;
+            case "HAQ":
+                fragment = new HAQFragment();
+                break;
+            case "JAMAR":
+                fragment = new JamarFragment();
+                break;
+            case "VIGO":
+                fragment = new VigoFragment();
+                break;
             default:
                 fragment = new VASFragment();
         }

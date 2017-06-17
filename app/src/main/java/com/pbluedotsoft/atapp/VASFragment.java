@@ -82,14 +82,14 @@ public class VASFragment extends Fragment {
 
         // IN or OUT background color adjustments
         if (mTab == Test.IN) {
-            bind.scrollView.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.bgIn));
+            bind.scrollView.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.background_in));
             for (SeekBar sb : mSeekBars) {
                 sb.setProgressDrawable(
                         ContextCompat.getDrawable(getActivity(), R.drawable.seek_bar_progress_in));
             }
 
         } else {
-            bind.scrollView.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.bgOut));
+            bind.scrollView.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.background_out));
             for (SeekBar sb : mSeekBars) {
                 sb.setProgressDrawable(
                         ContextCompat.getDrawable(getActivity(), R.drawable.seek_bar_progress_out));

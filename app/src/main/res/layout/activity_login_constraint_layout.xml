@@ -90,7 +90,7 @@
             android:id="@+id/btn_login_or_register"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/custom_button_spara"
+            android:background="@drawable/button_spara"
             android:textColor="@android:color/white"
             android:text="Log in"
             android:textSize="22sp"

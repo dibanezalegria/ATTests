@@ -36,6 +36,10 @@ public class TestActivity extends AppCompatActivity implements NotesDialogFragme
     // Save state constant
     private static final String STATE_USER_SAVED = "state_user_saved";
 
+    // This flag allows to detect when the user is interacting with the app VS
+    // when the app is calling listeners for EditText or Spinners upon initialization
+    public boolean mUserInteracting;
+
     // From bundle
     private String mHeaderString;
     private int mUserID;
@@ -51,10 +55,6 @@ public class TestActivity extends AppCompatActivity implements NotesDialogFragme
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
-
-//        // Long task ________________________________________________________________________________________ DEBUG
-//        LoadingActivity load = new LoadingActivity();
-//        load.execute();
 
         // Keep screen on
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
@@ -87,17 +87,6 @@ public class TestActivity extends AppCompatActivity implements NotesDialogFragme
 
         // Binding instead of findViewById
         bind = DataBindingUtil.setContentView(this, R.layout.activity_test);
-
-//        bind.progressLoader.setVisibility(View.VISIBLE);
-//
-//        try {
-//            for (int i = 0; i < 5; i++) {
-//                Log.d(LOG_TAG, "Emulating some task.. Step " + i);
-//                TimeUnit.SECONDS.sleep(1);
-//            }
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
 
         // Test title
         bind.tvTestTitle.setText(testName + " " + testTitle);
@@ -155,7 +144,6 @@ public class TestActivity extends AppCompatActivity implements NotesDialogFragme
         } else
             bind.viewpager.setCurrentItem(1);
 
-//        bind.progressLoader.setVisibility(View.GONE);
     }
 
     @Override
@@ -189,6 +177,12 @@ public class TestActivity extends AppCompatActivity implements NotesDialogFragme
         warnUser();
     }
 
+    @Override
+    public void onUserInteraction() {
+        super.onUserInteraction();
+        mUserInteracting = true;
+    }
+
     /**
      * Navigate up
      */
@@ -211,7 +205,17 @@ public class TestActivity extends AppCompatActivity implements NotesDialogFragme
             case "SOFI":
                 ref = R.string.sofi_manual;
                 break;
+            case "HAQ":
+                ref = R.string.haq_manual;
+                break;
+            case "JAMAR":
+                ref = R.string.jamar_manual;
+                break;
+            case "VIGO":
+                ref = R.string.vigo_manual;
+                break;
         }
+
         AlertDialog dialog = new AlertDialog.Builder(this).create();
         // fromHtml deprecated for Android N and higher
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
@@ -265,9 +269,6 @@ public class TestActivity extends AppCompatActivity implements NotesDialogFragme
 
         int rows = getContentResolver().update(mTestURI, values, null, null);
         Log.d(LOG_TAG, "rows updated: " + rows);
-
-//        // Inform TestActivity that notes have been updated
-//        ((TestActivity) getActivity()).notesHaveBeenUpdated(notesIn, notesOut);
     }
 
     private void warnUser() {

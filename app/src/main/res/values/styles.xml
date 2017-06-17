@@ -39,7 +39,7 @@
 
     <!-- Total Sums Text Output  ________________________________________________________________-->
     <style name="total_sum_text">
-        <item name="android:background">@drawable/spinner_blue_output_box</item>
+        <item name="android:background">@drawable/tv_output_blue</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">28sp</item>
     </style>
@@ -51,5 +51,14 @@
         <item name="android:textColor">#be000000</item>
         <item name="android:paddingStart">6dp</item>
     </style>
+
+    <!-- JAMAR __________________________________________________________________________________-->
+    <style name="jamar_et_text" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">22sp</item>
+        <!-- Use opacity for grey instead of grey color for better results (BE = 75% transparent)-->
+        <item name="android:textColor">#be000000</item>
+        <item name="android:paddingStart">6dp</item>
+    </style>
+
 
 </resources>

@@ -32,10 +32,9 @@ public class SofiFragment extends Fragment implements RadioGroup.OnCheckedChange
 
     private static final String LOG_TAG = SofiFragment.class.getSimpleName();
 
-    private static int N_QUESTIONS = 24;    // 12 x two hands per question
+    private static int N_QUESTIONS = 16;    // 8 x two hands per question
     // Save state constant
     private static final String STATE_CONTENT = "state_content";
-    //    private static final String STATE_RESULT = "state_result";
     private static final String STATE_HIGH_ON = "state_high_on";
 
     private RadioGroup[] mRGroup;
@@ -53,7 +52,7 @@ public class SofiFragment extends Fragment implements RadioGroup.OnCheckedChange
         mRGroup = new RadioGroup[N_QUESTIONS];
         mMissingAnswers = new boolean[N_QUESTIONS];
         mTvRGroup = new TextView[N_QUESTIONS];
-        mTvSum = new TextView[3];
+        mTvSum = new TextView[2];   // hand and arm
     }
 
     @Override
@@ -78,10 +77,10 @@ public class SofiFragment extends Fragment implements RadioGroup.OnCheckedChange
 
         // IN or OUT background color adjustments
         if (mTab == Test.IN) {
-            bind.scrollview.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.bgIn));
+            bind.scrollview.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.background_in));
 
         } else {
-            bind.scrollview.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.bgOut));
+            bind.scrollview.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.background_out));
 //            bind.tvSum1.setBackgroundResource(R.drawable.sofi_tv_sum);
         }
 
@@ -102,14 +101,6 @@ public class SofiFragment extends Fragment implements RadioGroup.OnCheckedChange
         mRGroup[13] = bind.rg7v;
         mRGroup[14] = bind.rg8h;
         mRGroup[15] = bind.rg8v;
-        mRGroup[16] = bind.rg9h;
-        mRGroup[17] = bind.rg9v;
-        mRGroup[18] = bind.rg10h;
-        mRGroup[19] = bind.rg10v;
-        mRGroup[20] = bind.rg11h;
-        mRGroup[21] = bind.rg11v;
-        mRGroup[22] = bind.rg12h;
-        mRGroup[23] = bind.rg12v;
 
         // Listeners
         for (RadioGroup rGroup : mRGroup) {
@@ -119,7 +110,6 @@ public class SofiFragment extends Fragment implements RadioGroup.OnCheckedChange
         // Hook up sums text views
         mTvSum[0] = bind.tvSum1;
         mTvSum[1] = bind.tvSum2;
-        mTvSum[2] = bind.tvSum3;
         mTotalSum = bind.tvTotalSum;
 
         // Done button
@@ -212,7 +202,6 @@ public class SofiFragment extends Fragment implements RadioGroup.OnCheckedChange
         // Save state for radio groups and total sum
         String content = generateContent();
         outState.putString(STATE_CONTENT, content);
-//        outState.putInt(STATE_RESULT, mResult);
         outState.putBoolean(STATE_HIGH_ON, mHighlightsON);
 
         // Always call the superclass so it can save the view hierarchy state
@@ -294,10 +283,9 @@ public class SofiFragment extends Fragment implements RadioGroup.OnCheckedChange
      * @return true if test is complete, false if there are answers mMissingAnswers
      */
     public boolean saveToDatabase() {
-        // Test status Hand, Arm and Ben radio groups
+        // Test status Hand and Arm radio groups
         boolean missingHand = checkMissingAnswers(0, 8);
         boolean missingArm = checkMissingAnswers(8, 16);
-        boolean missingBen = checkMissingAnswers(16, 24);
 
         // Result in database will be sumHand|sumArm|sumBen
         StringBuilder contentBuilder = new StringBuilder();
@@ -317,16 +305,8 @@ public class SofiFragment extends Fragment implements RadioGroup.OnCheckedChange
 
         contentBuilder.append("|");
 
-        if (missingBen) {
-            contentBuilder.append("-1");
-        } else {
-            contentBuilder.append(calculateSum(16, 24));
-        }
-
-        contentBuilder.append("|");
-
         int status;
-        if (missingHand || missingArm || missingBen) {
+        if (missingHand || missingArm) {
             status = Test.INCOMPLETED;
         } else {
             status = Test.COMPLETED;
@@ -346,7 +326,7 @@ public class SofiFragment extends Fragment implements RadioGroup.OnCheckedChange
         int rows = getActivity().getContentResolver().update(mTestUri, values, null, null);
         Log.d(LOG_TAG, "rows updated: " + rows);
 
-        return !missingHand && !missingArm && !missingBen;
+        return !missingHand && !missingArm;
     }
 
     /**
@@ -371,14 +351,6 @@ public class SofiFragment extends Fragment implements RadioGroup.OnCheckedChange
             mTvRGroup[13] = bind.tvRg7v;
             mTvRGroup[14] = bind.tvRg8h;
             mTvRGroup[15] = bind.tvRg8v;
-            mTvRGroup[16] = bind.tvRg9h;
-            mTvRGroup[17] = bind.tvRg9v;
-            mTvRGroup[18] = bind.tvRg10h;
-            mTvRGroup[19] = bind.tvRg10v;
-            mTvRGroup[20] = bind.tvRg11h;
-            mTvRGroup[21] = bind.tvRg11v;
-            mTvRGroup[22] = bind.tvRg12h;
-            mTvRGroup[23] = bind.tvRg12v;
         }
 
         for (int i = 0; i < N_QUESTIONS; i++) {
@@ -421,20 +393,6 @@ public class SofiFragment extends Fragment implements RadioGroup.OnCheckedChange
                 // Sum 1
                 int sum = calculateSum(8, 16);
                 mTvSum[1].setText(String.valueOf(sum));
-                break;
-            }
-
-            case R.id.rg9h:
-            case R.id.rg9v:
-            case R.id.rg10h:
-            case R.id.rg10v:
-            case R.id.rg11h:
-            case R.id.rg11v:
-            case R.id.rg12h:
-            case R.id.rg12v: {
-                // Sum 1
-                int sum = calculateSum(16, 24);
-                mTvSum[2].setText(String.valueOf(sum));
                 break;
             }
         }
