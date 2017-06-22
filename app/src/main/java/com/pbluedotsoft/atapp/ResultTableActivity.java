@@ -75,6 +75,18 @@ public class ResultTableActivity extends AppCompatActivity {
                     case "JAMAR":
                         handleJAMAR(cursor);
                         break;
+                    case "VIGO":
+                        handleVIGO(cursor);
+                        break;
+                    case "NINE":
+                        handleNINE(cursor);
+                        break;
+                    case "BOX":
+                        handleBOX(cursor);
+                        break;
+                    case "GAT":
+                        handleGAT(cursor);
+                        break;
                 }
             }
         } else {
@@ -216,6 +228,209 @@ public class ResultTableActivity extends AppCompatActivity {
             bind.tvJamarNotes.setText("*");
         }
     }
+
+    private void handleVIGO(Cursor cursor) {
+        // In
+        int statusIn = cursor.getInt(cursor.getColumnIndex(TestEntry.COLUMN_STATUS_IN));
+        if (statusIn == Test.COMPLETED || statusIn == Test.INCOMPLETED) {
+            String contentStr = cursor.getString(cursor.getColumnIndex(TestEntry.COLUMN_CONTENT_IN));
+            String[] content = contentStr.split("\\|");
+            // Values
+            if (!content[0].equals("-1")) {
+                bind.vigoHandInH.setText(content[0]);
+            }
+            if (!content[1].equals("-1")) {
+                bind.vigoHandInV.setText(content[1]);
+            }
+            if (!content[2].equals("-1")) {
+                bind.vigoFingerDig2InH.setText(content[2]);
+            }
+            if (!content[3].equals("-1")) {
+                bind.vigoFingerDig2InV.setText(content[3]);
+            }
+            if (!content[4].equals("-1")) {
+                bind.vigoFingerDig3InH.setText(content[4]);
+            }
+            if (!content[5].equals("-1")) {
+                bind.vigoFingerDig3InV.setText(content[5]);
+            }
+            if (!content[6].equals("-1")) {
+                bind.vigoFingerDig4InH.setText(content[6]);
+            }
+            if (!content[7].equals("-1")) {
+                bind.vigoFingerDig4InV.setText(content[7]);
+            }
+            if (!content[8].equals("-1")) {
+                bind.vigoFingerDig5InH.setText(content[8]);
+            }
+            if (!content[9].equals("-1")) {
+                bind.vigoFingerDig5InV.setText(content[9]);
+            }
+            if (!content[10].equals("-1")) {
+                bind.vigoThumbInH.setText(content[10]);
+            }
+            if (!content[11].equals("-1")) {
+                bind.vigoThumbInV.setText(content[11]);
+            }
+            // Normal values
+            bind.vigoNormalHandInH.setText(content[12]);
+            bind.vigoNormalHandInV.setText(content[12]);
+            bind.vigoNormalFingerInH.setText(content[13]);
+            bind.vigoNormalFingerInV.setText(content[13]);
+            bind.vigoNormalThumbInH.setText(content[14]);
+            bind.vigoNormalThumbInV.setText(content[14]);
+        }
+
+        // Out
+        int statusOut = cursor.getInt(cursor.getColumnIndex(TestEntry.COLUMN_STATUS_OUT));
+        if (statusOut == Test.COMPLETED || statusOut == Test.INCOMPLETED) {
+            String contentStr = cursor.getString(cursor.getColumnIndex(TestEntry.COLUMN_CONTENT_OUT));
+            String[] content = contentStr.split("\\|");
+            // Values
+            if (!content[0].equals("-1")) {
+                bind.vigoHandUtH.setText(content[0]);
+            }
+            if (!content[1].equals("-1")) {
+                bind.vigoHandUtV.setText(content[1]);
+            }
+            if (!content[2].equals("-1")) {
+                bind.vigoFingerDig2UtH.setText(content[2]);
+            }
+            if (!content[3].equals("-1")) {
+                bind.vigoFingerDig2UtV.setText(content[3]);
+            }
+            if (!content[4].equals("-1")) {
+                bind.vigoFingerDig3UtH.setText(content[4]);
+            }
+            if (!content[5].equals("-1")) {
+                bind.vigoFingerDig3UtV.setText(content[5]);
+            }
+            if (!content[6].equals("-1")) {
+                bind.vigoFingerDig4UtH.setText(content[6]);
+            }
+            if (!content[7].equals("-1")) {
+                bind.vigoFingerDig4UtV.setText(content[7]);
+            }
+            if (!content[8].equals("-1")) {
+                bind.vigoFingerDig5UtH.setText(content[8]);
+            }
+            if (!content[9].equals("-1")) {
+                bind.vigoFingerDig5UtV.setText(content[9]);
+            }
+            if (!content[10].equals("-1")) {
+                bind.vigoThumbUtH.setText(content[10]);
+            }
+            if (!content[11].equals("-1")) {
+                bind.vigoThumbUtV.setText(content[11]);
+            }
+            // Normal values
+            bind.vigoNormalHandUtH.setText(content[12]);
+            bind.vigoNormalHandUtV.setText(content[12]);
+            bind.vigoNormalFingerUtH.setText(content[13]);
+            bind.vigoNormalFingerUtV.setText(content[13]);
+            bind.vigoNormalThumbUtH.setText(content[14]);
+            bind.vigoNormalThumbUtV.setText(content[14]);
+        }
+
+        // Notes
+        String notesIn = cursor.getString(cursor.getColumnIndex(TestEntry.COLUMN_NOTES_IN));
+        String notesOut = cursor.getString(cursor.getColumnIndex(TestEntry.COLUMN_NOTES_OUT));
+
+        if ((notesIn != null && !notesIn.isEmpty()) || (notesOut != null && !notesOut.isEmpty())) {
+            bind.tvVigoNotes.setText("*");
+        }
+    }
+
+    private void handleNINE(Cursor cursor) {
+        // In
+        int statusIn = cursor.getInt(cursor.getColumnIndex(TestEntry.COLUMN_STATUS_IN));
+        if (statusIn == Test.COMPLETED) {
+            String contentIn = cursor.getString(cursor.getColumnIndex(TestEntry.COLUMN_RESULT_IN));
+            String[] contentArray = contentIn.split("\\|");
+            bind.nineInH.setText(contentArray[0]);
+            bind.nineInV.setText(contentArray[1]);
+            bind.nineNormalInH.setText(contentArray[2]);
+            bind.nineNormalInV.setText(contentArray[3]);
+        }
+
+        // Out
+        int statusOut = cursor.getInt(cursor.getColumnIndex(TestEntry.COLUMN_STATUS_OUT));
+        if (statusOut == Test.COMPLETED) {
+            String contentOut = cursor.getString(cursor.getColumnIndex(TestEntry.COLUMN_RESULT_OUT));
+            String[] contentArray = contentOut.split("\\|");
+            bind.nineUtH.setText(contentArray[0]);
+            bind.nineUtV.setText(contentArray[1]);
+            bind.nineNormalUtH.setText(contentArray[2]);
+            bind.nineNormalUtV.setText(contentArray[3]);
+        }
+
+        // Notes
+        String notesIn = cursor.getString(cursor.getColumnIndex(TestEntry.COLUMN_NOTES_IN));
+        String notesOut = cursor.getString(cursor.getColumnIndex(TestEntry.COLUMN_NOTES_OUT));
+
+        if ((notesIn != null && !notesIn.isEmpty()) || (notesOut != null && !notesOut.isEmpty())) {
+            bind.tvNineNotes.setText("*");
+        }
+    }
+
+    private void handleBOX(Cursor cursor) {
+        // In
+        int statusIn = cursor.getInt(cursor.getColumnIndex(TestEntry.COLUMN_STATUS_IN));
+        if (statusIn == Test.COMPLETED) {
+            String contentIn = cursor.getString(cursor.getColumnIndex(TestEntry.COLUMN_RESULT_IN));
+            String[] contentArray = contentIn.split("\\|");
+            bind.boxInH.setText(contentArray[0]);
+            bind.boxInV.setText(contentArray[1]);
+            bind.boxNormalInH.setText(contentArray[2]);
+            bind.boxNormalInV.setText(contentArray[3]);
+        }
+
+        // Out
+        int statusOut = cursor.getInt(cursor.getColumnIndex(TestEntry.COLUMN_STATUS_OUT));
+        if (statusOut == Test.COMPLETED) {
+            String contentOut = cursor.getString(cursor.getColumnIndex(TestEntry.COLUMN_RESULT_OUT));
+            String[] contentArray = contentOut.split("\\|");
+            bind.boxUtH.setText(contentArray[0]);
+            bind.boxUtV.setText(contentArray[1]);
+            bind.boxNormalUtH.setText(contentArray[2]);
+            bind.boxNormalUtV.setText(contentArray[3]);
+        }
+
+        // Notes
+        String notesIn = cursor.getString(cursor.getColumnIndex(TestEntry.COLUMN_NOTES_IN));
+        String notesOut = cursor.getString(cursor.getColumnIndex(TestEntry.COLUMN_NOTES_OUT));
+
+        if ((notesIn != null && !notesIn.isEmpty()) || (notesOut != null && !notesOut.isEmpty())) {
+            bind.tvBoxNotes.setText("*");
+        }
+    }
+
+    private void handleGAT(Cursor cursor) {
+        // In
+        int statusIn = cursor.getInt(cursor.getColumnIndex(TestEntry.COLUMN_STATUS_IN));
+        if (statusIn == Test.COMPLETED) {
+            String contentIn = cursor.getString(cursor.getColumnIndex(TestEntry.COLUMN_RESULT_IN));
+            String[] contentArray = contentIn.split("\\|");
+            bind.gatIn.setText(contentArray[0]);
+        }
+
+        // Out
+        int statusOut = cursor.getInt(cursor.getColumnIndex(TestEntry.COLUMN_STATUS_OUT));
+        if (statusOut == Test.COMPLETED) {
+            String contentOut = cursor.getString(cursor.getColumnIndex(TestEntry.COLUMN_RESULT_OUT));
+            String[] contentArray = contentOut.split("\\|");
+            bind.gatUt.setText(contentArray[0]);
+        }
+
+        // Notes
+        String notesIn = cursor.getString(cursor.getColumnIndex(TestEntry.COLUMN_NOTES_IN));
+        String notesOut = cursor.getString(cursor.getColumnIndex(TestEntry.COLUMN_NOTES_OUT));
+
+        if ((notesIn != null && !notesIn.isEmpty()) || (notesOut != null && !notesOut.isEmpty())) {
+            bind.tvGatNotes.setText("*");
+        }
+    }
+
 
     /**
      * Navigate up

@@ -185,5 +185,22 @@
  -->
     <string name="vigo_manual">VIGORIMETER instructions manual</string>
 
+    <!--
+________________________________________________________________________________________________
+
+                                           GAT
+
+________________________________________________________________________________________________
+-->
+    <string name="gat_q1">1. Ta FLEXI-GRIP-STRUMPAN som ligger på bordet och dra den som en handske över
+    den icke dominanta handen (tidur stoppas när samtliga fingertoppar är synliga).</string>
+
+    <string name="gat_q2">2. Plocka upp GEMET från bordsskivan (OBS får EJ dras över bordskanten) och
+    sätt det på kuvertet. Lägg ner kuvertet på bordet igen.</string>
+
+    <string name="gat_q3">3. Lyft den med 1 liter vatten fyllda plasttillbringaren (en-liters) med en hand
+        och full MUGGEN med vatten. Ställ ner tillbringaren på bordet igen (det är tillåtet att hålla i muggen
+    med den andra handen men ej att flytta den).</string>
+
 
 </resources>

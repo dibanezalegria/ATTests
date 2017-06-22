@@ -27,9 +27,9 @@ import com.pbluedotsoft.atapp.databinding.FragmentVasBinding;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class VASFragment extends Fragment {
+public class VasFragment extends Fragment {
 
-    private static final String LOG_TAG = VASFragment.class.getSimpleName();
+    private static final String LOG_TAG = VasFragment.class.getSimpleName();
 
     private static final int N_SLIDERS = 6;
 
@@ -45,7 +45,7 @@ public class VASFragment extends Fragment {
 
     private FragmentVasBinding bind;
 
-    public VASFragment() {
+    public VasFragment() {
         mSeekBars = new SeekBar[N_SLIDERS];
         mTextViews = new TextView[N_SLIDERS];
         mPlusBtn = new ImageButton[N_SLIDERS];

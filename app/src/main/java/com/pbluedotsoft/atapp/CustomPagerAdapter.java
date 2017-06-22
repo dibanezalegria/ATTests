@@ -32,13 +32,13 @@ public class CustomPagerAdapter extends FragmentPagerAdapter {
         Fragment fragment;
         switch (mTestCode) {
             case "VAS":
-                fragment = new VASFragment();
+                fragment = new VasFragment();
                 break;
             case "SOFI":
                 fragment = new SofiFragment();
                 break;
             case "HAQ":
-                fragment = new HAQFragment();
+                fragment = new HaqFragment();
                 break;
             case "JAMAR":
                 fragment = new JamarFragment();
@@ -46,8 +46,20 @@ public class CustomPagerAdapter extends FragmentPagerAdapter {
             case "VIGO":
                 fragment = new VigoFragment();
                 break;
+            case "NINE":
+                fragment = new NineHoleFragment();
+                break;
+            case "BOX":
+                fragment = new BoxFragment();
+                break;
+            case "GAT":
+                fragment = new GatFragment();
+                break;
+            case "STATUS":
+                fragment = new StatusFragment();
+                break;
             default:
-                fragment = new VASFragment();
+                fragment = new VasFragment();
         }
 
         // Android recommends to use Bundle to pass parameters to Fragments

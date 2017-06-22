@@ -31,9 +31,9 @@ import java.util.Locale;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HAQFragment extends Fragment implements AdapterView.OnItemSelectedListener {
+public class HaqFragment extends Fragment implements AdapterView.OnItemSelectedListener {
 
-    private static String LOG_TAG = HAQFragment.class.getSimpleName();
+    private static String LOG_TAG = HaqFragment.class.getSimpleName();
     private static int N_QUESTIONS = 20;
     private static int N_SUMS = 8;
     // Save state constant
@@ -50,7 +50,7 @@ public class HAQFragment extends Fragment implements AdapterView.OnItemSelectedL
 
     private FragmentHaqBinding bind;
 
-    public HAQFragment() {
+    public HaqFragment() {
         mSpin = new Spinner[N_QUESTIONS];
         mTvSum = new TextView[N_SUMS];
         mTvQ = new TextView[N_QUESTIONS];

@@ -21,7 +21,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="RESULTS TABLE"
+                android:text="MÄTRESULTAT"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />
         </LinearLayout>
@@ -255,7 +255,7 @@
                         android:ems="4"
                         android:gravity="center"
                         android:padding="@dimen/mat_padding"
-                        android:textAppearance="@style/TextCustomNormal" />
+                        android:textAppearance="@style/TextCustomNormalItalic" />
 
                     <TextView
                         android:id="@+id/jamar_normal_ut_h"
@@ -266,7 +266,7 @@
                         android:ems="4"
                         android:gravity="center"
                         android:padding="@dimen/mat_padding"
-                        android:textAppearance="@style/TextCustomNormal" />
+                        android:textAppearance="@style/TextCustomNormalItalic" />
 
                     <TextView
                         android:id="@+id/jamar_normal_in_v"
@@ -277,7 +277,7 @@
                         android:ems="4"
                         android:gravity="center"
                         android:padding="@dimen/mat_padding"
-                        android:textAppearance="@style/TextCustomNormal" />
+                        android:textAppearance="@style/TextCustomNormalItalic" />
 
                     <TextView
                         android:id="@+id/jamar_normal_ut_v"
@@ -288,7 +288,7 @@
                         android:ems="4"
                         android:gravity="center"
                         android:padding="@dimen/mat_padding"
-                        android:textAppearance="@style/TextCustomNormal" />
+                        android:textAppearance="@style/TextCustomNormalItalic" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -309,8 +309,713 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="VIGORIMETER"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:text="IN"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:text="UT"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:text="IN"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:text="UT"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/tv_vigo_notes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/results_table_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal"
+                        android:textColor="@color/red_600" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/table_row_light_bg">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/results_table_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Handstyrka"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_hand_in_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_hand_ut_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_hand_in_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_hand_ut_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/results_table_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/results_table_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Normalvärde"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_normal_hand_in_h"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextCustomSmallItalic" />
+
+                    <TextView
+                        android:id="@+id/vigo_normal_hand_ut_h"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextCustomSmallItalic" />
+
+                    <TextView
+                        android:id="@+id/vigo_normal_hand_in_v"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextCustomSmallItalic" />
+
+                    <TextView
+                        android:id="@+id/vigo_normal_hand_ut_v"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextCustomSmallItalic" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/results_table_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/results_table_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Fingerstyrka dig II"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_finger_dig2_in_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_finger_dig2_ut_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_finger_dig2_in_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_finger_dig2_ut_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/results_table_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/results_table_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Fingerstyrka dig III"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_finger_dig3_in_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_finger_dig3_ut_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_finger_dig3_in_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_finger_dig3_ut_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/results_table_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/results_table_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Fingerstyrka dig IV"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_finger_dig4_in_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_finger_dig4_ut_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_finger_dig4_in_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_finger_dig4_ut_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/results_table_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/results_table_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Fingerstyrka dig V"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_finger_dig5_in_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_finger_dig5_ut_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_finger_dig5_in_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_finger_dig5_ut_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/results_table_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/results_table_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Normalvärde"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_normal_finger_in_h"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextCustomSmallItalic" />
+
+                    <TextView
+                        android:id="@+id/vigo_normal_finger_ut_h"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextCustomSmallItalic" />
+
+                    <TextView
+                        android:id="@+id/vigo_normal_finger_in_v"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextCustomSmallItalic" />
+
+                    <TextView
+                        android:id="@+id/vigo_normal_finger_ut_v"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextCustomSmallItalic" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/results_table_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/results_table_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Tumstyrka"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_thumb_in_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_thumb_ut_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_thumb_in_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_thumb_ut_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/results_table_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/results_table_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Normalvärde"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/vigo_normal_thumb_in_h"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextCustomSmallItalic" />
+
+                    <TextView
+                        android:id="@+id/vigo_normal_thumb_ut_h"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextCustomSmallItalic" />
+
+                    <TextView
+                        android:id="@+id/vigo_normal_thumb_in_v"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextCustomSmallItalic" />
+
+                    <TextView
+                        android:id="@+id/vigo_normal_thumb_ut_v"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextCustomSmallItalic" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/results_table_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg"
+                    android:padding="@dimen/mat_padding"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:layout_width="0dp"
@@ -332,6 +1037,7 @@
                         android:ems="4"
                         android:gravity="center"
                         android:padding="@dimen/mat_padding"
+                        android:text="IN"
                         android:textAppearance="@style/TextCustomNormal" />
 
                     <TextView
@@ -342,6 +1048,7 @@
                         android:ems="4"
                         android:gravity="center"
                         android:padding="@dimen/mat_padding"
+                        android:text="UT"
                         android:textAppearance="@style/TextCustomNormal" />
 
                     <TextView
@@ -352,6 +1059,7 @@
                         android:ems="4"
                         android:gravity="center"
                         android:padding="@dimen/mat_padding"
+                        android:text="IN"
                         android:textAppearance="@style/TextCustomNormal" />
 
                     <TextView
@@ -362,6 +1070,7 @@
                         android:ems="4"
                         android:gravity="center"
                         android:padding="@dimen/mat_padding"
+                        android:text="UT"
                         android:textAppearance="@style/TextCustomNormal" />
 
                     <TextView
@@ -378,7 +1087,8 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg">
 
                     <TextView
                         android:layout_width="0dp"
@@ -448,7 +1158,8 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg">
 
                     <TextView
                         android:layout_width="0dp"
@@ -607,8 +1318,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/table_row_light_bg">
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:layout_width="0dp"
@@ -623,7 +1333,79 @@
                         android:textAppearance="@style/TextCustomNormal" />
 
                     <TextView
-                        android:id="@+id/peg_in_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:text="IN"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:text="UT"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:text="IN"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:text="UT"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/tv_nine_notes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/results_table_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/results_table_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Sekunder"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/nine_in_h"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="15"
@@ -634,7 +1416,7 @@
                         android:textAppearance="@style/TextCustomNormal" />
 
                     <TextView
-                        android:id="@+id/peg_ut_h"
+                        android:id="@+id/nine_ut_h"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="15"
@@ -645,7 +1427,7 @@
                         android:textAppearance="@style/TextCustomNormal" />
 
                     <TextView
-                        android:id="@+id/peg_in_v"
+                        android:id="@+id/nine_in_v"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="15"
@@ -656,7 +1438,7 @@
                         android:textAppearance="@style/TextCustomNormal" />
 
                     <TextView
-                        android:id="@+id/peg_ut_v"
+                        android:id="@+id/nine_ut_v"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="15"
@@ -676,16 +1458,296 @@
                         android:textAppearance="@style/TextCustomNormal" />
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/results_table_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Normalvärde"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/nine_normal_in_h"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormalItalic" />
+
+                    <TextView
+                        android:id="@+id/nine_normal_ut_h"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormalItalic" />
+
+                    <TextView
+                        android:id="@+id/nine_normal_in_v"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormalItalic" />
+
+                    <TextView
+                        android:id="@+id/nine_normal_ut_v"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormalItalic" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/results_table_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/results_table_border_only"
-                    android:ellipsize="end"
-                    android:ems="18"
-                    android:maxLines="1"
+                    android:background="@drawable/table_row_light_bg"
                     android:padding="@dimen/mat_padding"
-                    android:text="(mätts i sek./normalvärde/ålder)"
                     android:textAppearance="@style/TextCustomNormal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/results_table_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Box and Block"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:text="IN"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:text="UT"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:text="IN"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:text="UT"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/tv_box_notes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/results_table_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/results_table_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="St/min"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/box_in_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/box_ut_h"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/box_in_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/box_ut_v"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/results_table_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="35"
+                        android:background="@drawable/results_table_border_only"
+                        android:ellipsize="end"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Normalvärde"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/box_normal_in_h"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormalItalic" />
+
+                    <TextView
+                        android:id="@+id/box_normal_ut_h"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormalItalic" />
+
+                    <TextView
+                        android:id="@+id/box_normal_in_v"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormalItalic" />
+
+                    <TextView
+                        android:id="@+id/box_normal_ut_v"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormalItalic" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/results_table_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -797,7 +1859,8 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg">
 
                     <TextView
                         android:layout_width="0dp"
@@ -844,7 +1907,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/table_row_light_bg"
+                    android:background="@drawable/results_table_border_only"
                     android:ems="18"
                     android:padding="@dimen/mat_padding"
                     android:text="(skala 0-16 poäng respektive område; 0 = ua)"
@@ -853,13 +1916,13 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg"
                     android:padding="@dimen/mat_padding"
                     android:textAppearance="@style/TextCustomNormal" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/table_row_light_bg">
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:layout_width="0dp"
@@ -874,13 +1937,63 @@
                         android:textAppearance="@style/TextCustomNormal" />
 
                     <TextView
-                        android:id="@+id/gat_in"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="15"
                         android:background="@drawable/results_table_border_only"
                         android:ems="4"
+                        android:text="IN"
                         android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:text="UT"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/tv_gat_notes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/results_table_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="18"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Sekunder"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/gat_in"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ellipsize="end"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:maxLines="1"
                         android:padding="@dimen/mat_padding"
                         android:textAppearance="@style/TextCustomNormal" />
 
@@ -890,8 +2003,10 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="15"
                         android:background="@drawable/results_table_border_only"
+                        android:ellipsize="end"
                         android:ems="4"
                         android:gravity="center"
+                        android:maxLines="1"
                         android:padding="@dimen/mat_padding"
                         android:textAppearance="@style/TextCustomNormal" />
 
@@ -905,6 +2020,7 @@
                         android:textAppearance="@style/TextCustomNormal" />
                 </LinearLayout>
 
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -913,7 +2029,7 @@
                     android:ems="18"
                     android:maxLines="1"
                     android:padding="@dimen/mat_padding"
-                    android:text="(normalvärde 11-20 sek / medel 16,5 sek"
+                    android:text="(normalvärde 11-20 sek / medel 16,5 sek)"
                     android:textAppearance="@style/TextCustomNormal" />
 
 
@@ -926,7 +2042,6 @@
                     android:padding="@dimen/mat_padding"
                     android:textAppearance="@style/TextCustomNormal" />
 
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -936,10 +2051,60 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="65"
                         android:background="@drawable/results_table_border_only"
+                        android:ellipsize="end"
                         android:ems="18"
                         android:maxLines="1"
                         android:padding="@dimen/mat_padding"
-                        android:text="HAQ ADL-Index"
+                        android:text="HAQ ADL-index"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:text="IN"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:text="UT"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:id="@+id/tv_haq_notes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/results_table_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_light_bg">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Total summa: (0-3p, 0=ua)"
                         android:textAppearance="@style/TextCustomNormal" />
 
                     <TextView
@@ -965,7 +2130,6 @@
                         android:textAppearance="@style/TextCustomNormal" />
 
                     <TextView
-                        android:id="@+id/tv_haq_notes"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="5"
@@ -980,9 +2144,56 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/table_row_light_bg"
+                    android:ems="18"
+                    android:maxLines="1"
                     android:padding="@dimen/mat_padding"
-                    android:text="Total summa: (0-3p, 0=ua)"
                     android:textAppearance="@style/TextCustomNormal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="65"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="18"
+                        android:maxLines="1"
+                        android:padding="@dimen/mat_padding"
+                        android:text="Handstatus -> Gå till test"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="15"
+                        android:background="@drawable/results_table_border_only"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/results_table_border_only"
+                        android:gravity="center"
+                        android:padding="@dimen/mat_padding"
+                        android:textAppearance="@style/TextCustomNormal"
+                        android:textColor="@color/red_600" />
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1004,6 +2215,8 @@
                         android:text="kommentar"
                         android:textAppearance="@style/TextCustomNormal" />
                 </LinearLayout>
+
+
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

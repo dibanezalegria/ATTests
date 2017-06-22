@@ -125,7 +125,7 @@ public class PatientsActivity extends AppCompatActivity implements
         menu.setHeaderTitle(mPatientName + " - " + mPatientEntry);
         // Menu options
         menu.add(Menu.NONE, PATIENT_TESTS, 0, "Tests");
-        menu.add(Menu.NONE, PATIENT_RESULTS, 1, "Results table");
+        menu.add(Menu.NONE, PATIENT_RESULTS, 1, "Mätresultat");
         menu.add(Menu.NONE, PATIENT_EDIT, 2, "Edit patient details");
         menu.add(Menu.NONE, PATIENT_DELETE, 3, "Delete patient");
     }
@@ -284,12 +284,12 @@ public class PatientsActivity extends AppCompatActivity implements
             addTestForPatient(newPatientID, "JAMAR", "JAMAR", "- Standard Grip Strength Evaluation");
             addTestForPatient(newPatientID, "VIGO", "VIGORIMETER", "");
             addTestForPatient(newPatientID, "VAS", "VAS", "- Visuell Analog Skala");
-            addTestForPatient(newPatientID, "HOLE", "9-Hole Peg Test", "");
-            addTestForPatient(newPatientID, "BBOX", "Box and Block", "");
+            addTestForPatient(newPatientID, "NINE", "9-Hole Peg Test", "");
+            addTestForPatient(newPatientID, "BOX", "Box and Block", "");
             addTestForPatient(newPatientID, "SOFI", "SOFI funktionstest", "");
             addTestForPatient(newPatientID, "GAT", "GAT", "- Grip Ability Test");
             addTestForPatient(newPatientID, "HAQ", "HAQ ADL-index", "");
-            addTestForPatient(newPatientID, "STA", "Handstatus", "");
+            addTestForPatient(newPatientID, "STATUS", "Handstatus", "");
         }
 
         return uri;

@@ -37,6 +37,20 @@
         <item name="android:textColor">@color/textColor</item>
     </style>
 
+    <style name="TextCustomNormalItalic" parent="TextAppearance.AppCompat.Medium">
+        <!-- textSize default: 18sp -->
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="TextCustomSmallItalic" parent="TextAppearance.AppCompat.Small">
+        <!-- textSize default: 14sp -->
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
     <!-- Total Sums Text Output  ________________________________________________________________-->
     <style name="total_sum_text">
         <item name="android:background">@drawable/tv_output_blue</item>
@@ -54,6 +68,30 @@
 
     <!-- JAMAR __________________________________________________________________________________-->
     <style name="jamar_et_text" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">22sp</item>
+        <!-- Use opacity for grey instead of grey color for better results (BE = 75% transparent)-->
+        <item name="android:textColor">#be000000</item>
+        <item name="android:paddingStart">6dp</item>
+    </style>
+
+    <!-- NINE __________________________________________________________________________________-->
+    <style name="nine_et_text" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">22sp</item>
+        <!-- Use opacity for grey instead of grey color for better results (BE = 75% transparent)-->
+        <item name="android:textColor">#be000000</item>
+        <item name="android:paddingStart">6dp</item>
+    </style>
+
+    <!-- BOX __________________________________________________________________________________-->
+    <style name="box_et_text" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">22sp</item>
+        <!-- Use opacity for grey instead of grey color for better results (BE = 75% transparent)-->
+        <item name="android:textColor">#be000000</item>
+        <item name="android:paddingStart">6dp</item>
+    </style>
+
+    <!-- GAT __________________________________________________________________________________-->
+    <style name="gat_et_text" parent="TextAppearance.AppCompat.Medium">
         <item name="android:textSize">22sp</item>
         <!-- Use opacity for grey instead of grey color for better results (BE = 75% transparent)-->
         <item name="android:textColor">#be000000</item>

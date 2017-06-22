@@ -28,4 +28,18 @@
         <item>Barn</item>
     </string-array>
 
+    <!-- NINE Spinner values -->
+    <string-array name="nine_gender_spinner">
+        <item>-</item>
+        <item>Man</item>
+        <item>Kvinna</item>
+    </string-array>
+
+    <!-- BOX Spinner values -->
+    <string-array name="box_gender_spinner">
+        <item>-</item>
+        <item>Man</item>
+        <item>Kvinna</item>
+    </string-array>
+
 </resources>

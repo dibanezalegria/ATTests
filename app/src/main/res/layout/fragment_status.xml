@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_in"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        tools:context="com.pbluedotsoft.atapp.TestActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginTop="26dp"
+                android:background="@color/blue_grey_400"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:ems="12"
+                    android:text=""
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:text="Höger"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:text="Vänster"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Supination (grader)"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_supination_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_supination_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Pronation (grader)"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_pronation_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_pronation_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Dorsalflex akt (grader)"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_dorsal1_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_dorsal1_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Dorsalflex pass (grader)"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_dorsal2_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_dorsal2_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Volarflex (grader)"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_volar_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_volar_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Dig I till Dig V (cm)"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_dig_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_dig_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Öppningsgrepp (cm)"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_open1_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_open1_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Öppningsgrepp (grader)"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_open2_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_open2_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Opposition"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_opposition_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_opposition_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Knytdiastas"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_knytdiastas_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_knytdiastas_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Extensionsdefekt"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_extension_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_extension_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginTop="48dp"
+                android:background="@color/blue_grey_400"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:ems="12"
+                    android:text="Opposition (cm)"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:text="Höger"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:text="Vänster"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Dig II"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_opp_dig2_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_opp_dig2_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Dig III"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_opp_dig3_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_opp_dig3_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Dig IV"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_opp_dig4_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_opp_dig4_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Dig V"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_opp_dig5_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_opp_dig5_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginTop="48dp"
+                android:background="@color/blue_grey_400"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:ems="12"
+                    android:text="Knytdiastas (cm)"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:text="Höger"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:text="Vänster"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Dig II"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_knyt_dig2_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_knyt_dig2_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Dig III"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_knyt_dig3_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_knytrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Dig IV"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_knyt_dig4_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_knyt_dig4_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Dig V"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_knyt_dig5_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_knyt_dig5_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginTop="48dp"
+                android:background="@color/blue_grey_400"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:ems="12"
+                    android:text="Extensiondefekt (cm)"
+                    android:textAppearance="@style/TextCustomNormal"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:text="Höger"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:text="Vänster"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Dig II"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_ext_dig2_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_ext_dig2_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Dig III"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_ext_dig3_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_ext_dig3_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Dig IV"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_ext_dig4_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_ext_dig4_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/status_margin_left"
+                android:layout_marginTop="@dimen/status_margin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:text="Dig V"
+                    android:textAppearance="@style/TextCustomNormal" />
+
+                <EditText
+                    android:id="@+id/et_ext_dig5_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+
+                <EditText
+                    android:id="@+id/et_ext_dig5_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/status_margin_left"
+                    android:ems="3"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:maxLength="3"
+                    android:textSize="@dimen/status_text_size_et" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/button_spara"
+                android:text="@string/done_button"
+                android:textAppearance="@style/TextCustomNormal"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

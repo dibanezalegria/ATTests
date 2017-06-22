@@ -16,4 +16,9 @@
 
     <!-- HAQ ____________________________________________________________________________________-->
     <dimen name="haq_spinner_margin_start">32dp</dimen>
+
+    <!-- STATUS _________________________________________________________________________________-->
+    <dimen name="status_margin_top">16dp</dimen>
+    <dimen name="status_margin_left">32dp</dimen>
+    <dimen name="status_text_size_et">22sp</dimen>
 </resources>
