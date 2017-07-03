@@ -31,7 +31,7 @@ import com.pbluedotsoft.atapp.databinding.FragmentVigoBinding;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class VigoFragment extends Fragment implements TextWatcher, AdapterView.OnItemSelectedListener{
+public class VigoFragment extends Fragment implements TextWatcher, AdapterView.OnItemSelectedListener {
 
     private static final String LOG_TAG = VigoFragment.class.getSimpleName();
 
@@ -203,13 +203,12 @@ public class VigoFragment extends Fragment implements TextWatcher, AdapterView.O
             String[] content = contentStr.split("\\|");
             //  Set edit text values using info from content
             for (int i = 0; i < N_QUESTIONS; i++) {
-                if (!content[i].equals("-1")) {
-                    etValue[i].setText(content[i]);
-                }
+                etValue[i].setText(content[i]);
             }
             // Spinner state (last position in the array)
             try {
-                bind.spinPatientType.setSelection(Integer.parseInt(content[content.length - 1]));
+                bind.spinPatientType.setSelection(Integer
+                        .parseInt(content[content.length - 2]));    // last character is |0|
                 displayNormalValues();
             } catch (NumberFormatException ex) {
                 Log.d(LOG_TAG, "NumberFormatException converting content[0]");
@@ -288,11 +287,7 @@ public class VigoFragment extends Fragment implements TextWatcher, AdapterView.O
         StringBuilder builder = new StringBuilder();
         // EditText fields
         for (EditText et : etValue) {
-            if (et.getText().toString().isEmpty()) {
-                builder.append("-1");
-            } else {
-                builder.append(et.getText().toString());
-            }
+            builder.append(et.getText().toString());
             builder.append("|");
         }
 
@@ -306,7 +301,7 @@ public class VigoFragment extends Fragment implements TextWatcher, AdapterView.O
 
         // Spinner state
         builder.append(bind.spinPatientType.getSelectedItemPosition());
-        builder.append("|");
+        builder.append("|0|");
 
         return builder.toString();
     }

@@ -26,6 +26,7 @@ import java.util.Locale;
 public class LoginActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = LoginActivity.class.getSimpleName();
+    private static final boolean DEBUG_MODE = false;    // enables/disables action menu
     public static final int REQUEST_CODE = 1;
 
     private ActivityLoginBinding bind;
@@ -120,8 +121,10 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.log_menu, menu);
+        if (DEBUG_MODE) {
+            MenuInflater inflater = getMenuInflater();
+            inflater.inflate(R.menu.log_menu, menu);
+        }
         return true;
     }
 

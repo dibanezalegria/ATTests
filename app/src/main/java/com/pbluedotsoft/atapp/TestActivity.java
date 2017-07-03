@@ -214,6 +214,18 @@ public class TestActivity extends AppCompatActivity implements NotesDialogFragme
             case "VIGO":
                 ref = R.string.vigo_manual;
                 break;
+            case "BOX":
+                ref = R.string.box_manual;
+                break;
+            case "GAT":
+                ref = R.string.gat_manual;
+                break;
+            case "NINE":
+                ref = R.string.nine_manual;
+                break;
+            case "STATUS":
+                ref = R.string.status_manual;
+                break;
         }
 
         AlertDialog dialog = new AlertDialog.Builder(this).create();

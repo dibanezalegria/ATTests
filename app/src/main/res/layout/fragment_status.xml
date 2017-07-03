@@ -64,6 +64,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -99,6 +100,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -134,6 +136,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -169,6 +172,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -204,6 +208,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -239,6 +244,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -274,6 +280,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -309,6 +316,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -344,6 +352,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -379,6 +388,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -414,6 +424,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -488,6 +499,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -523,6 +535,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -558,6 +571,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -593,6 +607,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q14"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -667,6 +682,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q15"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -702,6 +718,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q16"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -719,7 +736,7 @@
                     android:textSize="@dimen/status_text_size_et" />
 
                 <EditText
-                    android:id="@+id/et_knytrap_content"
+                    android:id="@+id/et_knyt_dig3_v"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:layout_marginStart="@dimen/status_margin_left"
@@ -737,6 +754,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q17"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -772,6 +790,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q18"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -846,6 +865,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q19"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -881,6 +901,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -916,6 +937,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q21"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -951,6 +973,7 @@
                 android:layout_marginTop="@dimen/status_margin_top">
 
                 <TextView
+                    android:id="@+id/tv_q22"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="12"
@@ -984,6 +1007,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="48dp"
+                android:layout_marginBottom="32dp"
                 android:background="@drawable/button_spara"
                 android:text="@string/done_button"
                 android:textAppearance="@style/TextCustomNormal"

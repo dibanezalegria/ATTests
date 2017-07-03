@@ -193,20 +193,13 @@ public class JamarFragment extends Fragment implements TextWatcher, AdapterView.
                 Log.d(LOG_TAG, "NumberFormatException content[0] parsing");
             }
 
-            if (content.length > 1)
-                bind.etAge.setText(content[1]);
-            if (content.length > 2)
-                bind.etValue1h.setText(content[2]);
-            if (content.length > 3)
-                bind.etValue1v.setText(content[3]);
-            if (content.length > 4)
-                bind.etValue2h.setText(content[4]);
-            if (content.length > 5)
-                bind.etValue2v.setText(content[5]);
-            if (content.length > 6)
-                bind.etValue3h.setText(content[6]);
-            if (content.length > 7)
-                bind.etValue3v.setText(content[7]);
+            bind.etAge.setText(content[1]);
+            bind.etValue1h.setText(content[2]);
+            bind.etValue1v.setText(content[3]);
+            bind.etValue2h.setText(content[4]);
+            bind.etValue2v.setText(content[5]);
+            bind.etValue3h.setText(content[6]);
+            bind.etValue3v.setText(content[7]);
         }
 
         calculateResults();
@@ -271,7 +264,7 @@ public class JamarFragment extends Fragment implements TextWatcher, AdapterView.
         builder.append(bind.etValue3h.getText().toString());
         builder.append("|");
         builder.append(bind.etValue3v.getText().toString());
-        builder.append("|");
+        builder.append("|0|");
 
         return builder.toString();
     }

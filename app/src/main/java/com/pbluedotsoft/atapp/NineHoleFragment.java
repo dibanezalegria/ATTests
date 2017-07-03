@@ -186,12 +186,9 @@ public class NineHoleFragment extends Fragment implements TextWatcher, AdapterVi
                 Log.d(LOG_TAG, "NumberFormatException content[0] parsing");
             }
 
-            if (content.length > 1)
-                bind.etAge.setText(content[1]);
-            if (content.length > 2)
-                bind.etValueH.setText(content[2]);
-            if (content.length > 3)
-                bind.etValueV.setText(content[3]);
+            bind.etAge.setText(content[1]);
+            bind.etValueH.setText(content[2]);
+            bind.etValueV.setText(content[3]);
         }
 
         displayNormalValues();
@@ -233,7 +230,7 @@ public class NineHoleFragment extends Fragment implements TextWatcher, AdapterVi
         builder.append(bind.tvNormalH.getText().toString());
         builder.append("|");
         builder.append(bind.tvNormalV.getText().toString());
-        builder.append("|");
+        builder.append("|0|");
 
         return builder.toString();
     }
@@ -306,122 +303,122 @@ public class NineHoleFragment extends Fragment implements TextWatcher, AdapterVi
         if (age < 25) {
             if (gender == MALE) {
                 if (hand == RIGHT)
-                    return "19.0";
-                else return "17.7";
+                    return "16.1";
+                else return "16.8";
             } else {
                 if (hand == RIGHT)
-                    return "16.0";
-                else return "15.0";
+                    return "15.8";
+                else return "17.2";
             }
         } else if (age < 30) {
             if (gender == MALE) {
                 if (hand == RIGHT)
-                    return "24.4";
-                else return "22.0";
+                    return "16.7";
+                else return "17.7";
             } else {
                 if (hand == RIGHT)
-                    return "25.5";
-                else return "20.5";
+                    return "15.8";
+                else return "17.2";
             }
         } else if (age < 35) {
             if (gender == MALE) {
                 if (hand == RIGHT)
-                    return "26.6";
-                else return "25.1";
+                    return "17.7";
+                else return "18.7";
             } else {
                 if (hand == RIGHT)
-                    return "27.1";
-                else return "23.1";
+                    return "16.3";
+                else return "17.8";
             }
         } else if (age < 40) {
             if (gender == MALE) {
                 if (hand == RIGHT)
-                    return "35.1";
-                else return "29.2";
+                    return "17.9";
+                else return "19.4";
             } else {
                 if (hand == RIGHT)
-                    return "26.4";
-                else return "22.4";
+                    return "16.4";
+                else return "17.3";
             }
         } else if (age < 45) {
             if (gender == MALE) {
                 if (hand == RIGHT)
-                    return "41.6";
-                else return "35.6";
+                    return "17.7";
+                else return "18.9";
             } else {
                 if (hand == RIGHT)
-                    return "30.5";
-                else return "25.8";
+                    return "16.8";
+                else return "18.6";
             }
         } else if (age < 50) {
             if (gender == MALE) {
                 if (hand == RIGHT)
-                    return "49.0";
-                else return "42.2";
+                    return "18.8";
+                else return "20.4";
             } else {
                 if (hand == RIGHT)
-                    return "32.5";
-                else return "28.0";
+                    return "17.3";
+                else return "18.4";
             }
         } else if (age < 55) {
             if (gender == MALE) {
                 if (hand == RIGHT)
-                    return "49.0";
-                else return "42.2";
+                    return "19.2";
+                else return "20.7";
             } else {
                 if (hand == RIGHT)
-                    return "32.5";
-                else return "28.0";
+                    return "18.0";
+                else return "20.1";
             }
         } else if (age < 60) {
             if (gender == MALE) {
                 if (hand == RIGHT)
-                    return "54.9";
-                else return "47.4";
+                    return "19.2";
+                else return "21.0";
             } else {
                 if (hand == RIGHT)
-                    return "31.9";
-                else return "27.7";
+                    return "17.8";
+                else return "19.4";
             }
         } else if (age < 65) {
             if (gender == MALE) {
                 if (hand == RIGHT)
-                    return "54.7";
-                else return "50.1";
+                    return "20.3";
+                else return "21.0";
             } else {
                 if (hand == RIGHT)
-                    return "33.8";
-                else return "28.8";
+                    return "18.4";
+                else return "20.6";
             }
         } else if (age < 70) {
             if (gender == MALE) {
                 if (hand == RIGHT)
-                    return "55.2";
-                else return "50.0";
+                    return "20.7";
+                else return "22.9";
             } else {
                 if (hand == RIGHT)
-                    return "35.7";
-                else return "30.8";
+                    return "19.5";
+                else return "21.4";
             }
         } else if (age < 75) {
             if (gender == MALE) {
                 if (hand == RIGHT)
-                    return "54.3";
-                else return "51.2";
+                    return "22.0";
+                else return "23.8";
             } else {
                 if (hand == RIGHT)
-                    return "33.6";
-                else return "30.1";
+                    return "20.2";
+                else return "22.0";
             }
         } else {
             if (gender == MALE) {
                 if (hand == RIGHT)
-                    return "53.0";
-                else return "51.2";
+                    return "22.9";
+                else return "26.4";
             } else {
                 if (hand == RIGHT)
-                    return "31.9";
-                else return "28.3";
+                    return "21.5";
+                else return "24.6";
             }
         }
     }

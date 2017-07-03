@@ -152,12 +152,9 @@ public class GatFragment extends Fragment implements TextWatcher {
             String[] content = contentStr.split("\\|");
             Log.d(LOG_TAG, "content length: " + content.length + " content: " + Arrays.toString(content));
 
-            if (content.length > 0)
-                bind.etValueQ1.setText(content[0]);
-            if (content.length > 1)
-                bind.etValueQ2.setText(content[1]);
-            if (content.length > 2)
-                bind.etValueQ3.setText(content[2]);
+            bind.etValueQ1.setText(content[0]);
+            bind.etValueQ2.setText(content[1]);
+            bind.etValueQ3.setText(content[2]);
         }
 
         calculateResults();
@@ -220,7 +217,7 @@ public class GatFragment extends Fragment implements TextWatcher {
         builder.append(bind.etValueQ2.getText().toString());
         builder.append("|");
         builder.append(bind.etValueQ3.getText().toString());
-        builder.append("|");
+        builder.append("|0|");
         return builder.toString();
     }
 

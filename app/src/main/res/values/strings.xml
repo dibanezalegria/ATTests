@@ -32,7 +32,7 @@
     <string name="title_activity_patients">PatientsActivity</string>
 
     <!-- activity_test_list.xml -->
-    <string name="test_list_help_info">Placeholder text</string>
+    <string name="test_list_help_info"><![CDATA[<h1>Arbetsterapeutbedömningar</h1><u>Neuro-patienter</u><p>Handstatus neuro med sensibilitet m.m.<br/>Jamar<br/>VAS<br/>9-hole peg test<br/>Box and block test<br/>SOFI<br/>HAQ</p><u>RA-patienter</u><p>Handstatus RA med smärta, svullnad m.m.<br/>Jamar<br/>VAS<br/>GAT<br/>SOFI<br/>HAQ<br/>Vid behov: 9-hole peg test<br/></p><p>Inneliggande patienter; vid bedömning för om en patient behöver individuell arbetsterapibehandling eller om du träffar patienten endast för in- och utmätning eller för deltagande i handgrupp, bör samtliga bedömningar göras.</p><p>Om du ska träffa en patient endast ett fåtal gånger; bör en kort anamnes och tester göras, t.ex. jamar coh VAS men hela bedömningstillfället ska inte användas till tester utan patienten ska kunna komma igång med träning och behandling.</p><p>Pol-patienter; tester görs enligt överenskommelse med patienten.</p><p>Om inga tester kan göras eller om in- eller utstatus är ofullständigt, förklara varför i journalen och epikrisen.</p><p>Kommentera mätresultat i epikrisen. Om utmätningarna är sämre, ge om möjligt en förklaring till det.</p><p>OBS! Obligatoriska tester för reumatiska patienter från Stockholms läns landsting, Västra Götaland samt Hallands landsting: handstatus, jamar, VAS, GAT, SOFI och HAQ.</p>]]></string>
 
     <!--
   ________________________________________________________________________________________________
@@ -43,7 +43,7 @@
   -->
 
     <!-- CDATA sections are used to escape blocks of text containing characters that would otherwise be regarded as markup. -->
-    <string name="vas_manual"><![CDATA[<h1>VAS - Visuell Analog Skala</h1><p>Skatta på skala mellan 0 och 100.</p>]]></string>
+    <string name="vas_manual"><![CDATA[<h1>VAS - Visuell Analog Skala</h1><p>Skattning av handfunktion, smärta och stelhet. Gör en markering för höger respektive vänster hand och om det skiljer sig händerna. Mäts i mm, värdet ska vara mellan 0&#8211;100.</p><h3>Beskrivning</h3><p>Nedan ser Du tre separata linjer, där Du kan skatta Din upplevda handfunktion, stelhet och rörelsesmärta Du känt i Dina händer under den gångna veckan.<br/><br/>Du skattar genom att placera ett kryss på linjen där Du tycker att markeringen representerar Dina besvär.<br/><br/>T. ex. smärta, om Du har haft lätta smärtor placerar Du krysset närmare linjens vänstra ändpunkt, om Du har haft svårare smärtor ska krysset placeras mer åt höger. Om dina besvär har varierat under veckan ber jag Dig skatta genomsnittet. </p>]]></string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -55,7 +55,10 @@
 
   ________________________________________________________________________________________________
   -->
-    <string name="sofi_manual">SOFI instructions manual</string>
+    <!-- CDATA sections are used to escape blocks of text containing characters that would otherwise be regarded as markup. -->
+    <string
+        name="sofi_manual"><![CDATA[<h1>SOFI – Mäta led- och muskelfunktion i övre extremiteten</h1><h3>Utrustning</h3><p>- Cylindrar för test av gripförmågan 8, 6 och 2 cm i diameter<br/>- Vippbrädda 29x29x2 cm diameter klädd med antiglidmaterial med underliggande cylinder (4 cm)<br/>- Goniometer<br/>- Tidtagarur<br/>- Goniometer<br/>- Penna<br/>- Bord<br/>- Brits<br/>- Höj- och sänkbar kontorsstol med ryggstöd</p><h3>Poängbedömning</h3><p>Varje test bedöms enligt en 3&#8211;poängsskala, 0&#8211;2 poäng.<br/>0 p – patienten klarar testet utan svårighet<br/>1 p – patienten klarar testet med svårighet<br/>2 p – patienten klarar testet med stor svårighet eller inte alls<br/><br/>Totalsummans spridning är 0&#8211;32 p.<br/><br/>Totalsumma på 0p innebär att patienten klarat samtliga test utan anmärkning.</p>]]></string>
+
 
     <string name="sofi_hand_title">Handfunktion</string>
     <string name="sofi_arm_title">Armfunktion</string>
@@ -125,7 +128,8 @@
 
   ________________________________________________________________________________________________
   -->
-    <string name="haq_manual">HAQ ADL-index instructions manual</string>
+    <!-- CDATA sections are used to escape blocks of text containing characters that would otherwise be regarded as markup. -->
+    <string name="haq_manual"><![CDATA[<h1>HAQ ADL-index</h1><p>Kan fyllas i vid testtillfälle eller fyllas i på egen hand på rummet och lämnas tillbaka till arbetsterapeuten vid tillfälle.<br/>Kryssa iden ruta som bäst beskriver förmågan att klara angivna aktiviteter i det dagliga livet under den gångna veckan.<br/>Summera poängen och dela med 8.</p>]]></string>
 
     <string name="haq_title_0">Klädsel och toalett</string>
     <string name="haq_title_1">Uppresning</string>
@@ -174,16 +178,21 @@
 
  ________________________________________________________________________________________________
  -->
-    <string name="jamar_manual">JAMAR instructions manual</string>
+    <!-- CDATA sections are used to escape blocks of text containing characters that would otherwise be regarded as markup. -->
+    <string name="jamar_manual"><![CDATA[<h1>JAMAR - Standard Grip Strength Evaluation</h1><p>Mät styrkan 3 gånger på varje hand. Lägg ihop värdena och dela sedan med 3 för att få ett medelvärde. Personer över 20 år mäts i kg och barn mäts i pund.</p><h3>Testing procedures</h3><p>Have the individual sit with their shoulder abducted and neutrally rotated, elbow flexed at 90°, lorearm in neutral position, and wrist between 0° and 30° dorsiflexion and between 0° and 15° ulnar deviation.<br/><br/>Set the JAMAR Hand Dynamometer to the second handle position fråm the inside. Lightly hold around the readout dial to prevent inadvertent dropping. After the individual is positioned properly say, <i>“Squeeze as hard as you can… harder!… harder!… relax.”</i>.<br/><br/>Record the scores of three successive trials for each hand tested. The average score of the three trials can be compared with the normative data below, which is in kilograms,. From a statistical perspective, scores within two standard deviations of the mean are considered within normal limits. In addition, the individuals’ ability to use their hand functionally needs to be considered when interpreting a grip strength performance.</p><h3>Användning</h3><p>Vid användning av JAMAR handdynamometer måste man komma ihåg att det är ett precisionsinstrument och att dess exakthet kan bli förstörd vid oaktsam hantering. Låt patienten använda säkerhetsremmen för att minska risken för att JAMAR tappas i golvet.</p><h3>Användning av dynamometern</h3><p>1. Ställ in den justerbara remmen. Innan handtaget flyttas från en position till en annan, kontrollera att handtagsklämman sitter på det lägsta stället (längst bort) från mätaren. Om handtaget inte sätts tillbaka i rätt läge kommer de avlästa resultaten inte att bli korrekta.)<br/>2. Vrid den röda ”peak-hold” nålen motsols till 0.<br/>3. Låt patienten placera mätinstrumentet så att det ligger bra i handen. Be honom krama med maximal styrka. ”Peak-hold” nålen kommer automatiskt att registrera den högsta kraft som patienten har åstadkommit.<br/>4. Efter det att patienten har använt mätinstrumentet, avläs resultatet.<br/>5. Återställ ”Peak-hold” nålen till noll innan nya resultat avläses.</p><h3>Föreslagna standardprocedurer</h3><p>1. Sitt eller stå bekvämt<br/>2. Axelpartit framdraget och neutralt roterat<br/>3. Armbågen bjöd i 90 grader<br/>4. Underarmen i neutral position<br/>5. Handleden i neutral position<br/>6. Varje test upprepas 3 gånger<br/>7. Använd genomsnittsvärdet som registrerat resultat</p>]]></string>
+
 
     <!--
- ________________________________________________________________________________________________
+________________________________________________________________________________________________
 
-                                             VIGORIMETER
+                                           VIGORIMETER
 
- ________________________________________________________________________________________________
- -->
-    <string name="vigo_manual">VIGORIMETER instructions manual</string>
+________________________________________________________________________________________________
+-->
+    <!-- CDATA sections are used to escape blocks of text containing characters that would otherwise be regarded as markup. -->
+    <string
+        name="vigo_manual"><![CDATA[<h1>VIGORIMETER</h1><h3>Beskrivning</h3><p>Provet medför inga obehag och kan därför upprepas. Även om provet upprepas flera gånger kvarstår inga problematiska symtom.<br/><br/>Till följd av att gummibollens storlek (liten, medium och stor) anpassas automatiskt till patientens hand kan denne anbringa maximal kraft.<br/><br/>Den stora bollen kommer att användas av vuxna och tonåringar vars metakarpala omkrets överstiger 19 cm (handsstorlek större än 7&#189;), den mellanstora bollen av unga damer och kvinnor såväl som av vuxna vars metakarpala omkrets understiger 19 cm medans den lilla bollen bör användas vid prov på spädbarn och skolpojkar mellan cirka 2 till 10 år. Vidare kan den lilla bollen användas för prov av styrkan i enskilda fingrar hos tonåringar och vuxna. Bollen kommer då att hållas mellan tummen och fingrarna eller mellan metacarpus och fingret.</p><h3>Mätmetod</h3><p>Patienten griper om bollen  som redan är ansluten till manometer så att bollen vilar i patientens öppna hand med dess största volym och slangen på bollens hals mellan tummen och pekfingret.  Fingrarna runt bollen ska slutas snabbt till en knytnäve och därmed pressa ihop bollen. Fingertopparna ska även användas när fingrarna sluts till en knytnäve vilket innebär att de ska tryckas in hårt i bollen.</p><h3>Simulering under prov</h3><p>Genom att använda en mellanstor boll kan större kraft anbringas än med den större bollen. Vid jämförelsen av resultaten med dessa bollar kan skillnaden vara 20&#8211;30&#37;. Ur fysisk synpunkt kan positiva regler eller samband dosk inte bestämmas.<br/><br/>Om värdena av ingen uppbar orsak befinns vara extremt låga rekommenderas att upprepa provet med användning av en annan boll. Om resultaten avviker avsevärt från skillnaden 20&#8211;30&#37; bör patienten antas simulera med undantag av isolerade lesioner i vissa perifera nerver i armen. Fysiologiskt sett kan en obetydlig minskning inträffa (mindre än 10&#37;) om upprepade mätningar utförs utan paus med samma boll i samma hand. Efter några minuters vila kommer denna minskning dock att vara helt kompenserad. I händelse av fler upprepade prov blir resultaten ofta bättre. </p><h3>Prov av finger</h3><p>Patienten ska anbringa ett lätt tryck mellan tummen och respektive finger medans terapeuten håller bollens hals.<br/><br/>En annan möjlighet:<br/>Placera den lilla bollen under respektive fingers yttre del med bollen riktad mot handleden (tummen används inte). Det anbringade trycket ska vara så stort som möjligt. Prova tummen som följer: Placera den lilla bollen mellan tummen och metacarpus II (med raka fingrar) och utför en kraftig abduktion. För att prova den motstående kraften ska patienten placera bollen mellan fingrarnas IV och V yttre delar medan tummen anbringar en kraftig sammantryckning av bollen.</p>]]></string>
+
 
     <!--
 ________________________________________________________________________________________________
@@ -201,6 +210,43 @@ ________________________________________________________________________________
     <string name="gat_q3">3. Lyft den med 1 liter vatten fyllda plasttillbringaren (en-liters) med en hand
         och full MUGGEN med vatten. Ställ ner tillbringaren på bordet igen (det är tillåtet att hålla i muggen
     med den andra handen men ej att flytta den).</string>
+
+    <!-- CDATA sections are used to escape blocks of text containing characters that would otherwise be regarded as markup. -->
+    <string name="gat_manual"><![CDATA[<h1>GAT - Grip Ability Test</h1><p>Testet utförs sittande vid bord. Händerna vilar på bordet och tidtagningen startar när rörelsen börjar och avslutas när uppgiften är genomförd.<br/>Testföremålen skall vara placerade på bordet framför försökspersonen.<br/>Om uppgiften endast genomförs delvis efter 60 sekunder avbryts försöket och resultatet blir 60 sekunder.<br/>Om uppgiften ej kan utföras blir resultatet också 60 sekunder. Testresultatet summeras samman. Skall göras på alla reumatikerpatienter.</p><h3>Utrustning</h3><p>- 25 cm lång tubgasstrumpa. Kvinna storlek D (7.5 cm) och man storlek F (10 cm). Strumpan ska vara 30 x 10 cm.<br/>- Tillbringare med 1 liter vatten och kopp ska skall fyllas med 2 dl vatten (markering skall finnas på koppen).<br/>- Kuvert med gem.</p>]]></string>
+
+
+    <!--
+________________________________________________________________________________________________
+
+                                         BOX
+
+________________________________________________________________________________________________
+-->
+    <!-- CDATA sections are used to escape blocks of text containing characters that would otherwise be regarded as markup. -->
+    <string name="box_manual"><![CDATA[<h1>Box and Block Test</h1><p>Test av öga-handkoordination. Utrusning är låda med klossar och tidtagarur. Flytta över klossar från ena sidan till andra, en kloss i taget. Klossarna får ej slängas över sargen. Patienten för hålla på i 1 minut. Båda händerna testas. Normalvärdet är 60 klossar/minut.</p>]]></string>
+
+
+    <!--
+________________________________________________________________________________________________
+
+                                         NINE
+
+________________________________________________________________________________________________
+-->
+
+    <!-- CDATA sections are used to escape blocks of text containing characters that would otherwise be regarded as markup. -->
+    <string name="nine_manual"><![CDATA[<h1>9-Hole Peg Test</h1><p>Test av finmotorik. Testutrustning är låda som innehåller 9 träpinnar samt tidtagarur. Pinnarna ska sättas i hålen och tillbaka igen. Tidtagning börjar då patienten tar i den första pinnen och stoppas när sista pinnen läggs tillbaka. Man mäter hur lång tid det tar i minuter och sekunder. Båda händerna testas.</p><h3>Administration</h3><p>Test dominant hand first<br/><br/>Position board horizontally with rounded container next to tested hand<br/><br/>Read following directions to the patient:<br/>- This will be a practice test. Pick up the pegs one at a time using the hand to be tested only. Place them in the holes until all nine holes are filled. Then remove all of them one at a time. The pegs can be placed in the holes in any order. This is a practice test. Are you ready?<br/>-Begin<br/><br/>(If person does not understand instructions demo can be performed.)<br/><br/>After patient completes practice test, read the following:<br/>- This will be the actual test. Pick up the pegs one at a time using the hand to be tested only. Place them in holes until all nine holes are filled. Then remove all of them one at a time. The pegs can be placed in the holes in any order.<br/>- Are you ready?<br/>- Begin<br/><br/>Start stopwatch as soon as person touches first peg and stop as last peg hits container<br/><br/>Reposition unit on opposite side and repeat test</p>]]></string>
+
+
+    <!--
+________________________________________________________________________________________________
+
+                                        STATUS
+
+________________________________________________________________________________________________
+-->
+    <!-- CDATA sections are used to escape blocks of text containing characters that would otherwise be regarded as markup. -->
+    <string name="status_manual"><![CDATA[<h1>Handstatus</h1><p></p>]]></string>
 
 
 </resources>
