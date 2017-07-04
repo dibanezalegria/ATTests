@@ -53,6 +53,7 @@ public class PatientsActivity extends AppCompatActivity implements
 
     private ActivityPatientsBinding bind;
     private PatientCursorAdapter mCursorAdapter;
+    private AlertDialog mLoadingDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,7 +97,7 @@ public class PatientsActivity extends AppCompatActivity implements
         bind.listviewPatients.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Log.d(LOG_TAG, "list item clicked");
+//                Log.d(LOG_TAG, "list item clicked");
                 openContextMenu(view);
             }
         });
@@ -109,6 +110,16 @@ public class PatientsActivity extends AppCompatActivity implements
 
         // Kick off loader
         getSupportLoaderManager().initLoader(PATIENT_LOADER, null, this);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // closing dialog avoids leakage
+        if (mLoadingDialog != null) {
+            mLoadingDialog.dismiss();
+            Log.d(LOG_TAG, "onDestroy: dismissing loading dialog");
+        }
     }
 
     @Override
@@ -148,6 +159,10 @@ public class PatientsActivity extends AppCompatActivity implements
                 break;
             }
             case PATIENT_RESULTS: {
+                // Loading dialog
+                mLoadingDialog = new AlertDialog.Builder(this).create();
+                mLoadingDialog.setMessage("Loading...");
+                mLoadingDialog.show();
                 // Get patient's info from view
                 String headerStr = mPatientName + " - " + mPatientEntry;
                 Bundle extras = new Bundle();

@@ -16,7 +16,7 @@
 
         <activity
             android:name=".LoginActivity"
-            android:windowSoftInputMode="adjustResize|stateHidden">
+            android:windowSoftInputMode="adjustPan|stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,7 +30,7 @@
         <activity
             android:name=".UserRegistrationActivity"
             android:parentActivityName=".LoginActivity"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
+            android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
             android:name=".AdminActivity"
             android:parentActivityName=".LoginActivity" />
@@ -45,7 +45,7 @@
         <activity
             android:name=".TestActivity"
             android:parentActivityName=".TestListActivity"
-            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
     </application>
 
 </manifest>

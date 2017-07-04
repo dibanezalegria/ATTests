@@ -308,7 +308,7 @@ public class BoxFragment extends Fragment implements TextWatcher, AdapterView.On
                 else return "80.0";
             } else {
                 if (hand == RIGHT)
-                    return "81,1";
+                    return "81.1";
                 else return "79.7";
             }
         } else if (age < 50) {
