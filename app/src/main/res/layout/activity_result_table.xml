@@ -1308,7 +1308,7 @@
                     android:ems="18"
                     android:maxLines="1"
                     android:padding="@dimen/mat_padding"
-                    android:text="(skala 0-100 mm)"
+                    android:text="(skala 0-100)"
                     android:textAppearance="@style/TextCustomNormal" />
 
                 <TextView

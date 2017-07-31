@@ -16,6 +16,7 @@
             android:id="@+id/vas_layout_background"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="60dp"
             android:paddingEnd="16dp"
             android:paddingStart="16dp"
             android:orientation="vertical">

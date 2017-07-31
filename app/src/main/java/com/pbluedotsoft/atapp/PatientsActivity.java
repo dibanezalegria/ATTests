@@ -232,7 +232,7 @@ public class PatientsActivity extends AppCompatActivity implements
      */
     private void logoutDialog() {
         AlertDialog dialog = new AlertDialog.Builder(this).create();
-        dialog.setMessage("Are you sure to want to logout?");
+        dialog.setMessage("Are you sure you want to log out?");
         dialog.setButton(AlertDialog.BUTTON_NEGATIVE, "No", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
